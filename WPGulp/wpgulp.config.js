@@ -12,7 +12,7 @@
 // Local project URL of your already running WordPress site.
 // > Could be something like "wpgulp.local" or "localhost"
 // > depending upon your local WordPress setup.
-const projectURL = 'localhost/rtc-theme-template';
+const projectURL = 'localhost/sweetlink';
 
 // Theme/Plugin URL. Leave it like it is; since our gulpfile.js lives in the root folder.
 const productURL = '../';
@@ -24,7 +24,7 @@ const injectChanges = true;
 const styleSRC = '../assets/scss/*.scss';
 
 // Path to place the compiled CSS file. Default set to root folder.
-const styleDestination = '../assets/css/';
+const styleDestination = '../dist/css/';
 
 // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
 const outputStyle = 'compact';
@@ -37,7 +37,7 @@ const precision = 10;
 const jsVendorSRC = '../assets/js/vendor/*.js';
 
 // Path to place the compiled JS vendors file.
-const jsVendorDestination = '../assets/js/';
+const jsVendorDestination = '../dist/js/vendor/';
 
 // Compiled JS vendors file name. Default set to vendors i.e. vendors.js.
 const jsVendorFile = 'vendor';
@@ -45,23 +45,23 @@ const jsVendorFile = 'vendor';
 // JS Custom options.
 
 // Path to JS custom scripts folder.
-const jsCustomSRC = '../assets/js/custom/*.js';
+const jsCustomSRC = '../assets/js/*.js';
 
 // Path to place the compiled JS custom scripts file.
-const jsCustomDestination = '../assets/js/';
+const jsCustomDestination = '../dist/js/';
 
 // Compiled JS custom file name. Default set to custom i.e. custom.js.
-const jsCustomFile = 'custom';
+// const jsCustomFile = 'custom';
 
 // Images options.
 
 // Source folder of images which should be optimized and watched.
 // > You can also specify types e.g. raw/**.{png,jpg,gif} in the glob.
-const imgSRC = '../assets/images/raw/**/*';
+const imgSRC = '../assets/images/**/*';
 
 // Destination folder of optimized images.
 // > Must be different from the imagesSRC folder.
-const imgDST = '../assets/images/';
+const imgDST = '../dist/images/';
 
 // >>>>> Watch files paths.
 // Path to all *.scss files inside css folder and inside them.
@@ -71,14 +71,14 @@ const watchStyles = '../assets/scss/**/*.scss';
 const watchJsVendor = '../assets/js/vendor/*.js';
 
 // Path to all custom JS files.
-const watchJsCustom = '../assets/js/custom/*.js';
+const watchJsCustom = '../assets/js/*.js';
 
 // Path to all PHP files.
 const watchPhp = '../**/*.php';
 
 // >>>>> Zip file config.
 // Must have.zip at the end.
-const zipName = 'rtc_theme_template.zip';
+const zipName = 'sweetlink.zip';
 
 // Must be a folder outside of the zip folder.
 const zipDestination = '../../'; // Default: Parent folder.
@@ -110,16 +110,16 @@ const zipIgnoreGlob = [
 
 // >>>>> Translation options.
 // Your text domain here.
-const textDomain = 'rtc_theme_template';
+const textDomain = 'sweetlink';
 
 // Name of the translation file.
-const translationFile = 'rtc_theme_template.pot';
+const translationFile = 'sweetlink.pot';
 
 // Where to save the translation files.
 const translationDestination = '../languages';
 
 // Package name.
-const packageName = 'rtc_theme_template';
+const packageName = 'sweetlink';
 
 // Where can users report bugs.
 const bugReport = 'https://ryancadby.com';
@@ -150,7 +150,7 @@ module.exports = {
 	jsVendorFile,
 	jsCustomSRC,
 	jsCustomDestination,
-	jsCustomFile,
+	// jsCustomFile,
 	imgSRC,
 	imgDST,
 	watchStyles,

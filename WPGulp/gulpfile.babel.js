@@ -24,7 +24,8 @@
  *
  * TODO: Customize your project in the wpgulp.js file.
  */
-const config = require('./wpgulp.config.js');
+
+const config = require ( './wpgulp.config.js' ) ;
 
 /**
  * Load Plugins.
@@ -278,12 +279,11 @@ gulp.task('customJS', () => {
 			})
 		)
 		.pipe(remember(config.jsCustomSRC)) // Bring all files back to stream.
-		.pipe(concat(config.jsCustomFile + '.js'))
+		// .pipe(concat(config.jsCustomFile + '.js'))
 		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
 		.pipe(gulp.dest(config.jsCustomDestination))
 		.pipe(
 			rename({
-				basename: config.jsCustomFile,
 				suffix: '.min'
 			})
 		)
