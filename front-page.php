@@ -27,6 +27,7 @@
         <div class="col">
             <h1>Welcome to my website</h1>
             <h2><?php the_title();?></h2>
+            <p>testing</p>
         </div>
     </div>
     <div class="row">

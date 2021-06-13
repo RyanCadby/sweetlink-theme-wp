@@ -5,9 +5,15 @@
 //  DESCRIPTION: global styles
 // -------------------------------------------- //
 
-// -------- IMPORT BOOTSTRAP + VARS ------- //
+// -------------- IMPORT FONTS ---------- //
+// https://fonts.google.com/specimen/Rajdhani
+// https://fonts.google.com/specimen/Open+Sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+// -------- IMPORT BOOTSTRAP OVERRIDES + VARS ------- //
 // @import "./components/_mixins";
 @import "./components/_variables";
+
 // -------- IMPORT BOOTSTRAP DEFAULT VARS ------- //
 @import "./components/_defaults"; // REQUIRED
 // @import "../../gulp/node_modules/bootstrap/scss/type";
@@ -34,17 +40,46 @@
 // @import "./components/_header";
 // @import "./components/_footer";
 // @import "./components/_buttons";
-// @import "./components/_nav";
+@import "./components/_nav";
 @import "./components/_home";
+
+
+
 
 // start variables
 html{
-    font-size: 18px;
+    font-size: 14px;
 }
 body{
     overflow-x: hidden;
 }
 
-.h1{
-    font-size: 28px;
+h1, .h1{
+    font-family: $h-family;
+    font-size: 2.2rem;
+}
+h2, .h2{
+    font-family: $h-family;
+    font-size: 2rem;
+}
+h3, .h3{
+    font-family: $h-family;
+    font-size: 1.6rem;
+}
+h4, .h4{
+    font-family: $h-family;
+    font-size: 1.4rem;
+}
+p, .p{
+    font-family: $p-family;
+    font-size: 1rem;
+}
+a, .a{
+    font-family: $p-family;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: none;
+    }
 }
