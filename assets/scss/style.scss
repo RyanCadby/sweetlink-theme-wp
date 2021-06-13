@@ -1,6 +1,48 @@
+
+// -------------------------------------------- //
+//  NAME: style.scss
+//  VERSION: 1.0
+//  DESCRIPTION: global styles
+// -------------------------------------------- //
+
+// -------- IMPORT BOOTSTRAP + VARS ------- //
+// @import "./components/_mixins";
+@import "./components/_variables";
+// -------- IMPORT BOOTSTRAP DEFAULT VARS ------- //
+@import "./components/_defaults"; // REQUIRED
+// @import "../../gulp/node_modules/bootstrap/scss/type";
+// @import "../../gulp/node_modules/bootstrap/scss/buttons";
+// @import "../../gulp/node_modules/bootstrap/scss/breadcrumb";
+// @import "../../gulp/node_modules/bootstrap/scss/popover";
+// @import "../../gulp/node_modules/bootstrap/scss/nav";
+@import "../../gulp/node_modules/bootstrap/scss/navbar";
+@import "../../gulp/node_modules/bootstrap/scss/dropdown";
+@import "../../gulp/node_modules/bootstrap/scss/carousel";
+@import "../../gulp/node_modules/bootstrap/scss/transitions";
+// @import "../../gulp/node_modules/bootstrap/scss/forms";
+@import "../../gulp/node_modules/bootstrap/scss/modal";
+@import "../../gulp/node_modules/bootstrap/scss/input-group";
+
+// -------- IMPORT FONTAWESOME ------- //
+// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/brands";
+// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/regular";
+// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/solid";
+// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+// -------- IMPORT COMPONENT STYLES ------- //
+// @import "./components/_header";
+// @import "./components/_footer";
+// @import "./components/_buttons";
+// @import "./components/_nav";
+@import "./components/_home";
+
 // start variables
 html{
     font-size: 18px;
+}
+body{
+    overflow-x: hidden;
 }
 
 .h1{

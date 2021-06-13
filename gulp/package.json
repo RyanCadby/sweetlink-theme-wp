@@ -42,5 +42,8 @@
 		"translate": "gulp translate",
 		"styles-rtl": "gulp stylesRTL",
 		"cache-clear": "gulp clearCache"
+	},
+	"dependencies": {
+		"bootstrap": "^4.6.0"
 	}
 }
