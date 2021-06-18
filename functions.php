@@ -45,9 +45,14 @@ add_action('after_setup_theme', 'sl_theme_support');
 // add global variables
 function sl_global_vars() {
     global $sl_admin_active;
-    $sl_admin_active = is_admin_bar_showing();
+    if( is_admin_bar_showing() ){
+        $sl_admin_active = 'admin-true';
+    } else{
+        $sl_admin_active = 'admin-false';
+    }
+    
 }
-
+add_action('after_setup_theme', 'sl_global_vars');
 
 
 add_theme_support('post-thumbnails');

@@ -30,11 +30,12 @@
 @import "../../gulp/node_modules/bootstrap/scss/input-group";
 
 // -------- IMPORT FONTAWESOME ------- //
-// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/brands";
-// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/regular";
-// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/solid";
-// @import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+@import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../gulp/node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
 
 // -------- IMPORT COMPONENT STYLES ------- //
 // @import "./components/_header";
@@ -42,11 +43,14 @@
 // @import "./components/_buttons";
 @import "./components/_nav";
 @import "./components/_home";
+@import "./components/_forms";
+@import "./components/_contact-modal";
+@import "./components/_buttons";
 
 
 
 
-// start variables
+// GLOBALS
 html{
     font-size: 14px;
 }
@@ -82,4 +86,10 @@ a, .a{
     &:hover{
         text-decoration: none;
     }
+}
+
+
+// UTILITIES
+.admin-true{
+    margin-top: 30px;
 }

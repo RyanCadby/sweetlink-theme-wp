@@ -392,6 +392,10 @@ gulp.task('zip', () => {
 	return gulp.src(src).pipe(zip(config.zipName)).pipe(gulp.dest(config.zipDestination));
 });
 
+gulp.task('icons', function() {
+    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*').pipe(gulp.dest('../dist/webfonts/'));
+});
+
 /**
  * Watch Tasks.
  *
@@ -399,7 +403,7 @@ gulp.task('zip', () => {
  */
 gulp.task(
 	'default',
-	gulp.parallel('styles', 'vendorsJS', 'customJS', 'images', browsersync, () => {
+	gulp.parallel('styles', 'vendorsJS', 'customJS', 'images', 'icons', browsersync, () => {
 		gulp.watch(config.watchPhp, reload); // Reload on PHP file changes.
 		gulp.watch(config.watchStyles, gulp.parallel('styles')); // Reload on SCSS file changes.
 		gulp.watch(config.watchJsVendor, gulp.series('vendorsJS', reload)); // Reload on vendorsJS file changes.

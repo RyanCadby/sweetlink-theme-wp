@@ -17,6 +17,14 @@ jQuery(document).ready(function ($) {
     });
   }); // append contact li
 
-  var menuContactLink = '<li id="menu-item-contact" class="menu-item nav-item"><a href="#sl-contact"" class="nav-link">Contact</a></li>';
-  $('#menu-primary-nav').append(menuContactLink);
+  var menuContactLink = '<li id="menu-item-contact" class="menu-item nav-item"><a id="contact-modal-show" href="#sl-contact"" class="nav-link">Contact</a></li>';
+  $('#menu-primary-nav').append(menuContactLink); // contact link click
+
+  $('#contact-modal-show').click(function () {
+    $('#contact-modal-section').fadeIn(300);
+  }); // contact modal close
+
+  $('#contat-modal-hide').click(function () {
+    $('#cotact-modal-section').fadeOut(300);
+  });
 });
