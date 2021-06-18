@@ -42,6 +42,12 @@ function sl_theme_support(){
 }
 add_action('after_setup_theme', 'sl_theme_support');
 
+// add global variables
+function sl_global_vars() {
+    global $sl_admin_active;
+    $sl_admin_active = is_admin_bar_showing();
+}
+
 
 
 add_theme_support('post-thumbnails');
