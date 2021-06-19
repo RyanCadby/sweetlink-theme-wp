@@ -1,12 +1,30 @@
+a{
+    font-size: $p-size;
+    color: $primary;
+    font-weight: $p-reg;
+    transition: all .2s;
+
+    &:hover{
+        color: $secondary;
+    }
+}
+
+button{
+    font-size: $p-size;
+    color: $primary;
+    transition: all .2s;
+}
+
 .btn{
     padding: .75rem 2rem;
-    font-size: .8rem;
+    font-size: $p-size-sm;
     line-height: 1;
     border-radius: 3px;
     text-transform: capitalize;
     border: none;
     box-shadow: none;
     font-weight: 600;
+    transition: all .2s;
 
     &.btn-primary{
         background: $primary;
@@ -16,4 +34,12 @@
         background: $secondary;
         color: $primary;
     }
+
+    &:hover{
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: $dl-navy;
+    }
 }
+
+

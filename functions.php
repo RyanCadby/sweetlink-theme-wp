@@ -13,10 +13,7 @@ add_action('wp_enqueue_scripts', 'sl_load_stylesheets');
 // Load Scripts
 function sl_load_scripts()
 {   
-    
-    // wp_register_script('jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', '', 1, true);
-    // wp_enqueue_script('jQuery');
-    
+
     wp_enqueue_script('scripts-js', get_template_directory_uri() . '/dist/js/scripts.js', array('jquery'), '1.0.0', true);
     
 }
@@ -39,8 +36,46 @@ function sl_theme_support(){
             'footer-menu' => __('Footer Menu', 'theme'),
         )
     );
+    // add image sizes
+    add_image_size('smallest', 400, 400, true);
+    add_image_size('largest', 800, 800, true);
 }
 add_action('after_setup_theme', 'sl_theme_support');
+
+// add theme options page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+}
+
+// register custom post types
+function sl_custom_post_types() {
+ 
+    register_post_type( 'movies',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Portfolio' ),
+                'singular_name' => __( 'Portfolio' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'portfolio'),
+            'show_in_rest' => false,
+            'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', )
+ 
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'sl_custom_post_types' );
 
 // add global variables
 function sl_global_vars() {
@@ -55,11 +90,6 @@ function sl_global_vars() {
 add_action('after_setup_theme', 'sl_global_vars');
 
 
-add_theme_support('post-thumbnails');
-
-// add image sizes
-add_image_size('smallest', 400, 400, true);
-add_image_size('largest', 800, 800, true);
 
 // use default page/post editor
 add_filter('use_block_editor_for_post', '__return_false', 10);

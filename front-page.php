@@ -21,8 +21,20 @@
 
 <div class="container">
     <div class="row">
-        
+        <div class="col col-12 col-average">
+            <div class="average-cont">
+                <div class="average-string"></div>
+                <p class="average-text h1-display">Average</p>
+            </div>
+        </div>
     </div>
+    
+    
+    
+    
+    
+    
+    
     <div class="row">
         <div class="col">
             <h1>Welcome to my website</h1>

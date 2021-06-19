@@ -40,12 +40,12 @@
 // -------- IMPORT COMPONENT STYLES ------- //
 // @import "./components/_header";
 // @import "./components/_footer";
-// @import "./components/_buttons";
 @import "./components/_nav";
 @import "./components/_home";
 @import "./components/_forms";
 @import "./components/_contact-modal";
 @import "./components/_buttons";
+@import "./components/_front-page";
 
 
 
@@ -60,26 +60,32 @@ body{
 
 h1, .h1{
     font-family: $h-family;
-    font-size: 2.2rem;
+    font-size: $h1-size;
 }
 h2, .h2{
     font-family: $h-family;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: $h2-size;
 }
 h3, .h3{
     font-family: $h-family;
-    font-size: 1.6rem;
+    font-weight: 700;
+    font-size: $h3-size;
 }
 h4, .h4{
     font-family: $h-family;
-    font-size: 1.4rem;
+    font-size: $h4-size;
 }
 p, .p{
     font-family: $p-family;
-    font-size: 1rem;
+    font-size: $p-size;
+}
+.p-sm{
+    font-size: $p-size-sm;
 }
 a, .a{
     font-family: $p-family;
+    font-size: $p-size;
     text-decoration: none;
     cursor: pointer;
 

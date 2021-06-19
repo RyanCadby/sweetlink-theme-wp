@@ -14,9 +14,65 @@
         background-color: $white;
         height: 80%;
         width: 80%;
+        display: flex;
+        position: relative;
+        padding: 2rem;
 
         .container{
             background: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            // close button
+            #contact-modal-close{
+                background: none;
+                border: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: $h4-size;
+                line-height: .8;
+                padding: 1rem;
+
+                i{
+                    line-height: .8;
+                }
+                &:hover{
+                    color: $secondary;
+                }
+            }
+            
+            .row-contact{
+                .col-email{
+                    p{
+                        position: absolute;
+                        top: calc(-1rem - 5px);
+                    }
+                }
+            }
+            .row-social{
+                .col{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .social-cont{
+                        display: flex;
+
+                        a{
+                            line-height: 1;
+                            display: block;
+                            padding: .5rem;
+
+                            i{
+                                line-height: 1;
+                                font-size: 1.25rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

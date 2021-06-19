@@ -1,7 +1,12 @@
 form{
     &.wpcf7-form{
         label{
+            width: 100%;
             position: relative;
+
+            span{
+                width: 100%;
+            }
 
             &.input-wrap:after{
                 content: "";
@@ -19,6 +24,7 @@ form{
             border: 2px solid $white;
             padding: .25rem 0 .25rem .75rem;
             position: relative;
+            width: 100%;
             
             &::placeholder{
                 color: $dl-navy;

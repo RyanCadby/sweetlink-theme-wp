@@ -14,3 +14,40 @@ $secondary: #FFD600;
 
 $p-family: 'Open Sans', sans-serif;
 $h-family: 'Rajdhani', sans-serif;
+
+$p-size: 1rem;
+$p-size-sm: .8rem;
+
+$h1-size: 2.2rem;
+$h2-size: 2rem;
+$h3-size: 1.6rem;
+$h4-size: 1.4rem;
+
+$p-bold: 700;
+$p-med: 500;
+$p-reg: 400;
+$p-light: 300;
+
+$h-bold: 700;
+$h-med: 500;
+$h-reg: 400;
+$h-light: 300;
+
+$spacer-xl: 8rem;
+$spacer-lg: 6rem;
+$spacer-md: 4rem;
+$spacer-sm: 2rem;
+
+$spacer: 1rem;
+$spacers:
+(
+    0: 0,
+    1: ($spacer * 1),
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8)
+);

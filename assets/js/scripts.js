@@ -1,4 +1,6 @@
-jQuery(document).ready(function ($) {
+// jQuery(document).ready(function ($) {
+    jQuery(function ($) {
+        $(window).on('load', function () {
     console.log('Sweet Link Scripts v1.0.1');
 
     // Hero bg animation
@@ -22,12 +24,23 @@ jQuery(document).ready(function ($) {
     $('#menu-primary-nav').append(menuContactLink);
 
     // contact link click
-    $('#contact-modal-show').click(function(){
+    $('#contact-modal-show').on('click', function(){
         $('#contact-modal-section').fadeIn(300);
+        $('html').css('overflow', 'hidden');
     });
+
+
     // contact modal close
-    $('#contat-modal-hide').click(function(){
-        $('#cotact-modal-section').fadeOut(300);
+    // $('body').on('click', function(e){
+    //     if(e.target.parentElement.id == 'contact-modal-close'){
+    //         $('#contact-modal-section').fadeOut(300);
+    //         $('html').css('overflow', 'auto');
+    //     }
+    // });
+
+    $('#contact-modal-close').on('click', function(){
+        $('#contact-modal-section').fadeOut(300);
+        $('html').css('overflow', 'auto');
     });
 
 
@@ -35,5 +48,6 @@ jQuery(document).ready(function ($) {
 
 
 
+});
 });
 
