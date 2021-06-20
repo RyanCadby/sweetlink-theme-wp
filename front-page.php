@@ -19,14 +19,22 @@
     </div>
 </section>
 
-<div class="container">
-    <div class="row">
-        <div class="col col-12 col-average">
-            <div class="average-cont">
-                <div class="average-string"></div>
-                <p class="average-text h1-display">Average</p>
+<section class="section-average">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-average">
+                <div class="average-cont">
+                    <div class="average-strike"></div>
+                    <p class="average-text h1-d1">Average</p>
+                </div>
             </div>
         </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+       
     </div>
     
     

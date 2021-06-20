@@ -1,0 +1,25 @@
+section{
+    &.section-average{
+        .col-average{
+            .average-cont{
+                position: relative;
+                display: inline-block;
+                height: auto;
+
+                .average-strike{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    display: block;
+                    height: 10%;
+                    width: 100%;
+                    background: $yellow;
+                }
+                .average-text{
+                    line-height: 1.2
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

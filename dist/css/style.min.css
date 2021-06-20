@@ -2737,8 +2737,8 @@ form.wpcf7-form input[type='text']:-ms-input-placeholder,form.wpcf7-form input[t
 form.wpcf7-form input[type='text']::-ms-input-placeholder,form.wpcf7-form input[type='url']::-ms-input-placeholder,form.wpcf7-form input[type='email']::-ms-input-placeholder,form.wpcf7-form textarea::-ms-input-placeholder{color:#6d7783}
 form.wpcf7-form input[type='text']::placeholder,form.wpcf7-form input[type='url']::placeholder,form.wpcf7-form input[type='email']::placeholder,form.wpcf7-form textarea::placeholder{color:#6d7783}
 form.wpcf7-form input[type='text']:focus,form.wpcf7-form input[type='url']:focus,form.wpcf7-form input[type='email']:focus,form.wpcf7-form textarea:focus{outline:none !important;border:2px solid #ffd600;border-radius:3px;z-index:9}
-#contact-modal-section{position:absolute;top:0;left:0;height:100vh;width:100vw;background:#ffd600;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:9999}
-#contact-modal-section .contact-modal-wrap{background-color:#fff;height:80%;width:80%;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;padding:2rem}
+#contact-modal-section{position:absolute;top:0;left:0;height:100vh;width:100vw;background:#ffd600;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:9999;display:none}
+#contact-modal-section .contact-modal-wrap{background-color:#fff;height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;padding:2rem;border:80px solid #ffd600}
 #contact-modal-section .contact-modal-wrap .container{background:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close{background:0;border:0;position:absolute;top:0;right:0;font-size:1.4rem;line-height:.8;padding:1rem}
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close i{line-height:.8}
@@ -2755,6 +2755,10 @@ button{font-size:1rem;color:#0a1931;-webkit-transition:all .2s;transition:all .2
 .btn.btn-primary{background:#0a1931;color:#fff}
 .btn.btn-secondary{background:#ffd600;color:#0a1931}
 .btn:hover{-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);background:#6d7783}
+section.section-average .col-average .average-cont{position:relative;display:inline-block;height:auto}
+section.section-average .col-average .average-cont .average-strike-cont{position:absolute;left:0;top:0;height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+section.section-average .col-average .average-cont .average-strike{position:absolute;top:50%;left:0;display:block;height:10%;width:100%;background:#ffd600}
+section.section-average .col-average .average-cont .average-text{color:#0a1931}
 html{font-size:14px}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.2rem}
@@ -2766,6 +2770,7 @@ p,.p{font-family:"Open Sans",sans-serif;font-size:1rem}
 a,.a{font-family:"Open Sans",sans-serif;font-size:1rem;text-decoration:none;cursor:pointer}
 a:hover,.a:hover{text-decoration:none}
 .admin-true{margin-top:30px}
+.h1-d1{font-size:10rem;font-family:"Open Sans",sans-serif;font-weight:800;letter-spacing:-7px;color:#0a1931;margin-bottom:0}
 @media(prefers-reduced-motion:reduce){.carousel-item{-webkit-transition:none;transition:none}
 .carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-right{-webkit-transition:none;transition:none}
 .carousel-control-prev,.carousel-control-next{-webkit-transition:none;transition:none}
