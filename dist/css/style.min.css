@@ -2756,10 +2756,9 @@ button{font-size:1rem;color:#0a1931;-webkit-transition:all .2s;transition:all .2
 .btn.btn-secondary{background:#ffd600;color:#0a1931}
 .btn:hover{-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);background:#6d7783}
 section.section-average .col-average .average-cont{position:relative;display:inline-block;height:auto}
-section.section-average .col-average .average-cont .average-strike-cont{position:absolute;left:0;top:0;height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-section.section-average .col-average .average-cont .average-strike{position:absolute;top:50%;left:0;display:block;height:10%;width:100%;background:#ffd600}
-section.section-average .col-average .average-cont .average-text{color:#0a1931}
-html{font-size:14px}
+section.section-average .col-average .average-cont .average-strike{position:absolute;top:50%;left:0;display:block;height:10%;width:0;background:#ffd600}
+section.section-average .col-average .average-cont .average-text{line-height:1.2;color:#0a1931;display:inline-block;padding:0 2rem}
+html{font-size:14px;scroll-behavior:smooth}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.2rem}
 h2,.h2{font-family:"Rajdhani",sans-serif;font-weight:700;font-size:2rem}

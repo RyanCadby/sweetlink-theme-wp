@@ -12,12 +12,14 @@ section{
                     left: 0;
                     display: block;
                     height: 10%;
-                    width: 100%;
+                    width: 0;
                     background: $yellow;
                 }
                 .average-text{
-                    line-height: 1.2
+                    line-height: 1.2;
                     color: $primary;
+                    display: inline-block;
+                    padding: 0 2rem;
                 }
             }
         }

@@ -53,6 +53,7 @@
 // GLOBALS
 html{
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -93,6 +94,7 @@ a, .a{
         text-decoration: none;
     }
 }
+
 
 
 // UTILITIES

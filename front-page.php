@@ -19,14 +19,56 @@
     </div>
 </section>
 
+<section class="section-portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <div style="height: 500px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section-average">
     <div class="container">
         <div class="row">
             <div class="col col-12 col-average">
-                <div class="average-cont">
+                <div class="average-cont" data-animate="0">
+                    <div class="average-strike"></div>
+                    <p class="average-text h1-d1">Satisfactory</p>
+                </div>
+                <div class="average-cont" data-animate="0">
                     <div class="average-strike"></div>
                     <p class="average-text h1-d1">Average</p>
                 </div>
+                <div class="average-cont" data-animate="0">
+                    <div class="average-strike"></div>
+                    <p class="average-text h1-d1">Sufficient</p>
+                </div>
+                <div class="average-cont" data-animate="0">
+                    <div class="average-strike"></div>
+                    <p class="average-text h1-d1">Good Enough</p>
+                </div>
+                <div class="average-cont" data-animate="0">
+                    <div class="average-strike"></div>
+                    <p class="average-text h1-d1">Mediocre</p>
+                </div>
+                <div class="average-cont" data-animate="0">
+                    <div class="average-strike"></div>
+                    <p class="average-text h1-d1">Vanilla</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section-portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <div style="height: 2000px;"></div>
             </div>
         </div>
     </div>
