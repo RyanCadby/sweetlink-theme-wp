@@ -2719,6 +2719,7 @@ mark,.mark{padding:.2em;background-color:#fcf8e3}
 .fa.fa-superpowers{font-family:'Font Awesome 5 Brands';font-weight:400}
 .fa.fa-wpexplorer{font-family:'Font Awesome 5 Brands';font-weight:400}
 .fa.fa-cab:before{content:"\f1ba"}
+.section-footer ul li{text-align:right}
 nav.navbar a.navbar-brand{display:block;width:12rem;padding:.5rem 0}
 nav.navbar a.navbar-brand img{width:100%}
 nav.navbar .navbar-link-container .nav-link{color:#fff;padding:1rem .5rem;margin:0 .5rem;overflow:hidden;position:relative;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
@@ -2768,6 +2769,7 @@ p,.p{font-family:"Open Sans",sans-serif;font-size:1rem}
 .p-sm{font-size:.8rem}
 a,.a{font-family:"Open Sans",sans-serif;font-size:1rem;text-decoration:none;cursor:pointer}
 a:hover,.a:hover{text-decoration:none}
+ul{list-style-type:none;padding:0;margin:0}
 .admin-true{margin-top:30px}
 .h1-d1{font-size:10rem;font-family:"Open Sans",sans-serif;font-weight:800;letter-spacing:-7px;color:#0a1931;margin-bottom:0}
 @media(prefers-reduced-motion:reduce){.carousel-item{-webkit-transition:none;transition:none}
