@@ -102,6 +102,24 @@ jQuery(function ($) {
 
     // sweet variables
     var sweet = $('.sweet-slide');
+    var sweet_top_arr = [];
+    var sweet_top = 0;
+    // font size
+    var sweet_font_size = 18;
+    var sweet_font = $('.p-sweet:first-of-type').css('font-size', sweet_font_size + 'rem');
+    var sweet_font_arr = [sweet_font_size];
+    
+
+    sweet.each(function(){
+        // set position
+        sweet_top = $(this).position().top + 50 + sweet_top;
+        sweet_top_arr.push(sweet_top);
+        // set font size
+        sweet_font_size = Math.round((sweet_font_size - .2) * 10) / 10;
+        sweet_font_arr.push(sweet_font_size);
+
+        console.log(sweet_font_arr);
+    });
 
     // Text strike through animation
     $(document).scroll( function(){
@@ -129,20 +147,25 @@ jQuery(function ($) {
             }
         });
 
+        var i = 0;
         sweet.each(function(){
             target_height = $(this).height();
             target_position = $(this).offset().top;
 
             bottom_of_screen = curr_scroll + window_height;
             bottom_of_target = target_position + target_height;
-            target_percentage_position = ((bottom_of_screen - bottom_of_target)  / (window_height - (window_height * .6)) * 500);
+            target_percentage_position = Math.floor(((bottom_of_screen - bottom_of_target)  / (window_height - (window_height * .6)) * 400));
 
             console.log(target_percentage_position);
-            if( bottom_of_screen >= bottom_of_target && target_percentage_position <= 100 ){
+            if( bottom_of_screen >= bottom_of_target && target_percentage_position <= sweet_top_arr[i] ){
                 $(this).css('top', target_percentage_position);
-            } else if( target_percentage_position > 100){
-                $(this).css('top', '100px');
+            } else if( target_percentage_position > sweet_top_arr[i]){
+                $(this).css('top', sweet_top_arr[i]);
+                $(this).attr('data-sweet', 1);
+            } else{
+                $(this).css('top', 0);
             }
+            i++;
         });
 
 

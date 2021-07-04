@@ -89,12 +89,12 @@
                     <p class="p-sweet sweet-slide">Sweet!</p>
                 </div> -->
                 <p class="p-sweet">Sweet!</p>
-                <p class="p-sweet sweet-slide">Sweet!</p>
-                <p class="p-sweet sweet-slide">Sweet!</p>
-                <p class="p-sweet sweet-slide">Sweet!</p>
-                <p class="p-sweet sweet-slide">Sweet!</p>
-                <p class="p-sweet sweet-slide">Sweet!</p>
-                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
+                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
+                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
+                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
+                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
+                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
             </div>
         </div>
     </div>
