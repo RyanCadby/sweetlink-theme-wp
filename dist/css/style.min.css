@@ -2719,7 +2719,10 @@ mark,.mark{padding:.2em;background-color:#fcf8e3}
 .fa.fa-superpowers{font-family:'Font Awesome 5 Brands';font-weight:400}
 .fa.fa-wpexplorer{font-family:'Font Awesome 5 Brands';font-weight:400}
 .fa.fa-cab:before{content:"\f1ba"}
-.section-footer ul li{text-align:right}
+.section-footer .menu-footer-nav-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+.section-footer .menu-footer-nav-container li{margin-bottom:.5rem}
+.section-footer .social-list li{text-align:right}
+.section-footer .hr{display:block;height:2px;background-color:#0a1931}
 nav.navbar a.navbar-brand{display:block;width:12rem;padding:.5rem 0}
 nav.navbar a.navbar-brand img{width:100%}
 nav.navbar .navbar-link-container .nav-link{color:#fff;padding:1rem .5rem;margin:0 .5rem;overflow:hidden;position:relative;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
@@ -2759,6 +2762,15 @@ button{font-size:1rem;color:#0a1931;-webkit-transition:all .2s;transition:all .2
 section.section-average .col-average .average-cont{position:relative;display:inline-block;height:auto}
 section.section-average .col-average .average-cont .average-strike{position:absolute;top:50%;left:0;display:block;height:10%;width:0;background:#ffd600}
 section.section-average .col-average .average-cont .average-text{line-height:1.2;color:#0a1931;display:inline-block;padding:0 2rem}
+section.section-average .row-sweet .p-sweet{font-family:"Open Sans",sans-serif;font-weight:800;font-size:18rem;stroke:2px black;-webkit-text-stroke:2px black;color:#ffd600;letter-spacing:-.8rem;display:block;position:absolute;top:0;margin-bottom:0;width:100%;text-align:center}
+section.section-average .row-sweet .p-sweet:nth-of-type(1){font-size:18rem;z-index:101}
+section.section-average .row-sweet .p-sweet:nth-of-type(2){font-size:17.8rem;z-index:100}
+section.section-average .row-sweet .p-sweet:nth-of-type(3){font-size:17.6rem;z-index:99}
+section.section-average .row-sweet .p-sweet:nth-of-type(4){font-size:17.4rem;z-index:98}
+section.section-average .row-sweet .p-sweet:nth-of-type(5){font-size:17.2rem;z-index:97}
+section.section-average .row-sweet .p-sweet:nth-of-type(6){font-size:17rem;z-index:96}
+section.section-average .row-sweet .p-sweet:nth-of-type(7){font-size:16.8rem;z-index:95}
+section.section-average .row-sweet .p-sweet:nth-of-type(7){font-size:16.6rem;z-index:94}
 html{font-size:14px;scroll-behavior:smooth}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.2rem}
@@ -2769,9 +2781,10 @@ p,.p{font-family:"Open Sans",sans-serif;font-size:1rem}
 .p-sm{font-size:.8rem}
 a,.a{font-family:"Open Sans",sans-serif;font-size:1rem;text-decoration:none;cursor:pointer}
 a:hover,.a:hover{text-decoration:none}
+a.link{font-weight:700;color:#ffd600}
 ul{list-style-type:none;padding:0;margin:0}
 .admin-true{margin-top:30px}
-.h1-d1{font-size:10rem;font-family:"Open Sans",sans-serif;font-weight:800;letter-spacing:-7px;color:#0a1931;margin-bottom:0}
+.h1-d1{font-size:10rem;font-family:"Open Sans",sans-serif;font-weight:700;letter-spacing:-7px;color:#0a1931;margin-bottom:0}
 @media(prefers-reduced-motion:reduce){.carousel-item{-webkit-transition:none;transition:none}
 .carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-right{-webkit-transition:none;transition:none}
 .carousel-control-prev,.carousel-control-next{-webkit-transition:none;transition:none}

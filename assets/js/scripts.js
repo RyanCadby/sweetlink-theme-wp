@@ -90,6 +90,7 @@ jQuery(function ($) {
     //     }
     // });
 
+    // strike through variables
     var target = $('.average-cont');
     var curr_scroll = $(window).scrollTop();
     var window_height = $(window).height();
@@ -99,7 +100,8 @@ jQuery(function ($) {
     var target_height = '';
     var target_position = '';
 
-    
+    // sweet variables
+    var sweet = $('.sweet-slide');
 
     // Text strike through animation
     $(document).scroll( function(){
@@ -126,7 +128,26 @@ jQuery(function ($) {
                 $(this).children('.average-strike').css('width', 100 + '%');
             }
         });
-    }); // end scroll strike through animation 
+
+        sweet.each(function(){
+            target_height = $(this).height();
+            target_position = $(this).offset().top;
+
+            bottom_of_screen = curr_scroll + window_height;
+            bottom_of_target = target_position + target_height;
+            target_percentage_position = ((bottom_of_screen - bottom_of_target)  / (window_height - (window_height * .6)) * 500);
+
+            console.log(target_percentage_position);
+            if( bottom_of_screen >= bottom_of_target && target_percentage_position <= 100 ){
+                $(this).css('top', target_percentage_position);
+            } else if( target_percentage_position > 100){
+                $(this).css('top', '100px');
+            }
+        });
+
+
+    }); // end scroll function
+
 
     
     

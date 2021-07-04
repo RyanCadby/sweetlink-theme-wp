@@ -94,6 +94,10 @@ a, .a{
         text-decoration: none;
     }
 }
+a.link{
+    font-weight: $p-bold;
+    color: $secondary;
+}
 ul{
     list-style-type: none;
     padding: 0;

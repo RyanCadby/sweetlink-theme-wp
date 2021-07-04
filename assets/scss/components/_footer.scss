@@ -1,7 +1,28 @@
 .section-footer{
-    ul{
+    // ul{
+    //     li{
+    //         text-align: right;
+    //     }
+    // }
+
+    .menu-footer-nav-container{
+        display: flex;
+        justify-content: flex-end;
+
+        li{
+            margin-bottom: .5rem;
+        }
+    }
+
+    .social-list{
         li{
             text-align: right;
         }
+    }
+
+    .hr{
+        display: block;
+        height: 2px;
+        background-color: $primary;
     }
 }

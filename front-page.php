@@ -59,6 +59,44 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col col-12">
+                <h4>We don't do "mediocre"</h4>
+                <h4>We work hard to deliver products that make you want to say</h4>
+            </div>
+        </div>
+        <div class="row row-sweet">
+            <div class="col col-12">
+                <!-- <div class="sweet-cont">
+                    <p class="p-sweet">Sweet</p>
+                </div>
+                <div class="sweet-cont">
+                    <p class="p-sweet sweet-slide">Sweet!</p>
+                </div>
+                <div class="sweet-cont">
+                    <p class="p-sweet sweet-slide">Sweet!</p>
+                </div>
+                <div class="sweet-cont">
+                    <p class="p-sweet sweet-slide">Sweet!</p>
+                </div>
+                <div class="sweet-cont">
+                    <p class="p-sweet sweet-slide">Sweet!</p>
+                </div>
+                <div class="sweet-cont">
+                    <p class="p-sweet sweet-slide">Sweet!</p>
+                </div>
+                <div class="sweet-cont">
+                    <p class="p-sweet sweet-slide">Sweet!</p>
+                </div> -->
+                <p class="p-sweet">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -75,15 +113,7 @@
 </section>
 
 <div class="container">
-    <div class="row">
-       
-    </div>
-    
-    
-    
-    
-    
-    
+    <div class="row"></div>
     
     <div class="row">
         <div class="col">
@@ -103,6 +133,6 @@
     </div>
 </div>
 
-<div class="testing"></div>
+
 
 <?php get_footer();?>
