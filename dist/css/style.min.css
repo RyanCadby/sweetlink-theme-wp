@@ -2762,6 +2762,7 @@ button{font-size:1rem;color:#0a1931;-webkit-transition:all .2s;transition:all .2
 section.section-average .col-average .average-cont{position:relative;display:inline-block;height:auto}
 section.section-average .col-average .average-cont .average-strike{position:absolute;top:50%;left:0;display:block;height:10%;width:0;background:#ffd600}
 section.section-average .col-average .average-cont .average-text{line-height:1.2;color:#0a1931;display:inline-block;padding:0 2rem}
+section.section-average .row-sweet{height:55rem}
 section.section-average .row-sweet .p-sweet{font-family:"Open Sans",sans-serif;font-weight:800;font-size:18rem;stroke:2px black;-webkit-text-stroke:2px black;color:#ffd600;letter-spacing:-.8rem;display:block;position:absolute;top:0;margin-bottom:0;width:100%;text-align:center}
 section.section-average .row-sweet .p-sweet:nth-of-type(1){font-size:18rem;z-index:101}
 section.section-average .row-sweet .p-sweet:nth-of-type(2){font-size:17.8rem;z-index:100}

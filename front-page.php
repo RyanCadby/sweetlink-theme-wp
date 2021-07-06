@@ -89,12 +89,53 @@
                     <p class="p-sweet sweet-slide">Sweet!</p>
                 </div> -->
                 <p class="p-sweet">Sweet!</p>
-                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
-                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
-                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
-                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
-                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
-                <p class="p-sweet sweet-slide" data-sweet='0'>Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <div class="sweet-spacer"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-services">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-md-4">
+                <?php echo
+                '<h2>' . get_field('services_title') . '</h2>' .
+                '<p>' . get_field('services_copy') . '</p>';
+                ?>
+
+            </div>
+            <div class="col col-12 col-md-3">
+                <?php echo
+                '<h3>' . get_field('design_title') . '</h3>';
+                if( have_rows('design_items') ):
+                    $design_echo = '<ul class="design-list">';
+                    while( have_rows('design_items') ): the_row();
+                        $design_echo .= '<li class="design-item">' . get_sub_field('item') . '</li>';
+                    endwhile;
+                    $design_echo .= '</ul>';
+                    echo $design_echo;
+                endif;
+                ?>
+            </div>
+            <div class="col col-12 col-md-3">
+                <?php echo 
+                '<h3>' . get_field('development_title') . '</h3>';
+                if( have_rows('development_items') ):
+                    $dev_echo = '<ul class="dev-list">';
+                    while(have_rows('development_items') ): the_row();
+                        $dev_echo .= '<li class="dev-item">' . get_sub_field('item') . '</li>';
+                    endwhile;
+                    $dev_echo .= '</ul>';
+                    echo $dev_echo; 
+                endif;
+                ?>
             </div>
         </div>
     </div>

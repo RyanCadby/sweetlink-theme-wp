@@ -161,7 +161,6 @@ jQuery(function ($) {
                 $(this).css('top', target_percentage_position);
             } else if( target_percentage_position > sweet_top_arr[i]){
                 $(this).css('top', sweet_top_arr[i]);
-                $(this).attr('data-sweet', 1);
             } else{
                 $(this).css('top', 0);
             }
