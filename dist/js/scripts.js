@@ -36,6 +36,7 @@ jQuery(function ($) {
     $('#contact-modal-close').on('click', function () {
       $('#contact-modal-section').fadeOut(300);
       $('html').css('overflow', 'auto');
+      window.history.pushState({}, document.title, window.location.href.substr(0, window.location.href.lastIndexOf("/") + 1));
     }); // function sl_normal_animate(target){
     //     var curr_scroll = $(window).scrollTop();
     //     var window_height = $(window).height();

@@ -144,33 +144,7 @@
     </div>
 </section>
 
-<section class="section-cta py-3 py-sm-4 py-md-5">
-    <div class="container">
-        <img id="cta-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/sl-logo-white-stroke.svg" alt="Sweet Link Logo White">
-        <div class="row justify-content-center">  
-            <div class="col col-12 col-md-6">
-                <?php
-                global $post;
-                $cta_page_id = $post->ID;
-                $enable_cta = get_field('enable_cta', $cta_page_id);
-                if( $enable_cta ):
-                    if( have_rows('cta_details') ):
-                        $cta_echo = '';
-                        while( have_rows('cta_details') ): the_row();
-                            $cta_title = get_sub_field('title');
-                            $cta_btn_text = get_sub_field('button_text');
-                            $cta_btn_link = get_sub_field('button_link');
-                            $cta_echo = '<div class="cta-text-cont">' . $cta_title . '</div>' . 
-                            '<a class="btn btn-outline" href="' . $cta_btn_link . '">' . $cta_btn_text . '</a>';
-                        endwhile;
-                        echo $cta_echo;
-                    endif;
-                endif;
-                ?>
-            </div>
-        </div>
-    </div>
-</section>
+<?php get_template_part('template-parts/cta');?>
 
 
 

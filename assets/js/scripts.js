@@ -42,6 +42,7 @@ jQuery(function ($) {
     $('#contact-modal-close').on('click', function(){
         $('#contact-modal-section').fadeOut(300);
         $('html').css('overflow', 'auto');
+        window.history.pushState({}, document.title, window.location.href.substr(0, window.location.href.lastIndexOf("/") + 1));
     });
 
 
