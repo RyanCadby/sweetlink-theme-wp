@@ -103,13 +103,16 @@
 
 <section class="section-services">
     <div class="container">
-        <div class="row">
-            <div class="col col-12 col-md-4">
+        <div class="row row-services">
+            <div class="col col-12 offset-md-1">
                 <?php echo
-                '<h2>' . get_field('services_title') . '</h2>' .
-                '<p>' . get_field('services_copy') . '</p>';
+                    '<h2>' . get_field('services_title') . '</h2>';
                 ?>
-
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col col-12 col-md-4 offset-md-1">
+                <?php the_field('services_copy');?>
             </div>
             <div class="col col-12 col-md-3">
                 <?php echo
@@ -141,38 +144,34 @@
     </div>
 </section>
 
-
-
-<section class="section-portfolio">
+<section class="section-cta py-3 py-sm-4 py-md-5">
     <div class="container">
-        <div class="row">
-            <div class="col col-12">
-                <div style="height: 2000px;"></div>
+        <img id="cta-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/sl-logo-white-stroke.svg" alt="Sweet Link Logo White">
+        <div class="row justify-content-center">  
+            <div class="col col-12 col-md-6">
+                <?php
+                global $post;
+                $cta_page_id = $post->ID;
+                $enable_cta = get_field('enable_cta', $cta_page_id);
+                if( $enable_cta ):
+                    if( have_rows('cta_details') ):
+                        $cta_echo = '';
+                        while( have_rows('cta_details') ): the_row();
+                            $cta_title = get_sub_field('title');
+                            $cta_btn_text = get_sub_field('button_text');
+                            $cta_btn_link = get_sub_field('button_link');
+                            $cta_echo = '<div class="cta-text-cont">' . $cta_title . '</div>' . 
+                            '<a class="btn btn-outline" href="' . $cta_btn_link . '">' . $cta_btn_text . '</a>';
+                        endwhile;
+                        echo $cta_echo;
+                    endif;
+                endif;
+                ?>
             </div>
         </div>
     </div>
 </section>
 
-<div class="container">
-    <div class="row"></div>
-    
-    <div class="row">
-        <div class="col">
-            <h1>Welcome to my website</h1>
-            <h2><?php the_title();?></h2>
-            <p>testing</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <?php if (have_posts()) : while(have_posts()) : the_post();?>
-
-                <?php the_content();?>
-
-            <?php endwhile; endif;?>
-        </div>
-    </div>
-</div>
 
 
 

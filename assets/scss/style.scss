@@ -46,6 +46,7 @@
 @import "./components/_contact-modal";
 @import "./components/_buttons";
 @import "./components/_front-page";
+@import "./components/_cta";
 
 
 
@@ -117,4 +118,13 @@ ul{
     letter-spacing: -7px;
     color: $primary;
     margin-bottom: 0;
+}
+
+// UNIVERSAL 
+section{
+    margin-bottom: 10rem;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
 }

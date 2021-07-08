@@ -1,0 +1,19 @@
+.section-cta{
+    background-color: $secondary;
+    position: relative;
+
+    .container{
+        
+
+        #cta-img{
+            position: absolute;
+            top: -40%;
+            left: 10%;
+            width: auto;
+            height: 180%;
+            display: block;
+            transform: rotate(50deg);
+            opacity: .4;
+        }
+    }
+}
