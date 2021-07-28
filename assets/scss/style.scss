@@ -55,6 +55,7 @@
 html{
     font-size: 14px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     overflow-x: hidden;
@@ -63,6 +64,7 @@ body{
 h1, .h1{
     font-family: $h-family;
     font-size: $h1-size;
+    font-weight: 800;
 }
 h2, .h2{
     font-family: $h-family;
@@ -114,7 +116,7 @@ ul{
 .h1-d1{
     font-size: $h1-size-d1;
     font-family: $p-family;
-    font-weight: $p-bold;
+    font-weight: $p-black;
     letter-spacing: -7px;
     color: $primary;
     margin-bottom: 0;

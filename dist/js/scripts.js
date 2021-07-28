@@ -25,14 +25,7 @@ jQuery(function ($) {
     $('#contact-modal-show').on('click', function () {
       $('#contact-modal-section').fadeIn(300);
       $('html').css('overflow', 'hidden');
-    }); // contact modal close
-    // $('body').on('click', function(e){
-    //     if(e.target.parentElement.id == 'contact-modal-close'){
-    //         $('#contact-modal-section').fadeOut(300);
-    //         $('html').css('overflow', 'auto');
-    //     }
-    // });
-
+    });
     $('#contact-modal-close').on('click', function () {
       $('#contact-modal-section').fadeOut(300);
       $('html').css('overflow', 'auto');
@@ -97,7 +90,6 @@ jQuery(function ($) {
 
       sweet_font_size = Math.round((sweet_font_size - .2) * 10) / 10;
       sweet_font_arr.push(sweet_font_size);
-      console.log(sweet_font_arr);
     }); // Text strike through animation
 
     $(document).scroll(function () {
@@ -129,7 +121,9 @@ jQuery(function ($) {
         bottom_of_screen = curr_scroll + window_height;
         bottom_of_target = target_position + target_height;
         target_percentage_position = Math.floor((bottom_of_screen - bottom_of_target) / (window_height - window_height * .6) * 400);
-        console.log(target_percentage_position);
+        console.log('bottom of screen: ' + bottom_of_screen);
+        console.log('bottom of target: ' + bottom_of_target);
+        console.log('target percentage position: ' + target_percentage_position);
 
         if (bottom_of_screen >= bottom_of_target && target_percentage_position <= sweet_top_arr[i]) {
           $(this).css('top', target_percentage_position);

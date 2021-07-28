@@ -107,3 +107,24 @@ function sl_nav_class_on_a( $nav_a_classes, $item, $args ) {
     return $nav_a_classes;
 }
 add_filter( 'nav_menu_link_attributes', 'sl_nav_class_on_a', 10, 3 );
+
+
+// acf json - save func
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+function my_acf_json_save_point( $path ) {
+    // update path
+    $path = get_stylesheet_directory() . '/includes/acf-json';
+    // return
+    return $path;
+}
+
+// acf json - load func
+add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+function my_acf_json_load_point( $paths ) {
+    // remove original path (optional)
+    unset($paths[0]);
+    // append path
+    $paths[] = get_stylesheet_directory() . '/includes/acf-json';
+    // return
+    return $paths;
+}
