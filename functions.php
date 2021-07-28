@@ -128,3 +128,12 @@ function my_acf_json_load_point( $paths ) {
     // return
     return $paths;
 }
+
+// add_filter( 'template_include', 'get_custom_page_templates', 99 );
+// function get_custom_page_templates( ) {
+// 	if ( get_site_url() == 'https://sweetlinkstudio.com' ) {
+// 			return get_stylesheet_directory_uri() . '/template-coming.php';
+// 	} else{
+//         return get_stylesheet_directory_uri() . 'front-page.php';
+//     }
+// }
