@@ -69,7 +69,8 @@ function sl_custom_post_types() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'portfolio'),
             'show_in_rest' => false,
-            'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', )
+            'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+            'taxonomies' => array('category', 'post_tag')
  
         )
     );
