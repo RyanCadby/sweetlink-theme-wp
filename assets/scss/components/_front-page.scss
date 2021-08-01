@@ -22,8 +22,12 @@
         align-items: center;
     
         .hero-text-cont{
-            background-color: white;
+            background-color: $primary;
             padding: 4rem 2rem;
+
+            h1{
+                color: $white;
+            }
         }
     }
 }
