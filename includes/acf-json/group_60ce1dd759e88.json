@@ -140,10 +140,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_6105b35aa7c9c",
+            "key": "field_6105b389a7c9d",
             "label": "Portfolio Items",
             "name": "portfolio_items",
-            "type": "repeater",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -152,35 +152,14 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_6105b389a7c9d",
-                    "label": "Portfolio Item",
-                    "name": "portfolio_item",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "movies"
-                    ],
-                    "taxonomy": "",
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "return_format": "object",
-                    "ui": 1
-                }
-            ]
+            "post_type": [
+                "movies"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
         },
         {
             "key": "field_60e48f506d00e",
@@ -376,5 +355,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1627763622
+    "modified": 1627823880
 }

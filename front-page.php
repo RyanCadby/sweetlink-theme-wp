@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<section>
+<section class="py-0">
     <div class="container hero-container">
         <div class="hero-wrap">
             <div class="hero-pattern-cont">
@@ -33,29 +33,42 @@
     </div>
 </section>
 
-<section class="section-portfolio">
+<section class="section-portfolio bg-primary">
     <div class="container">
-        <div class="row">
+        <div class="row row-portfolio-title">
             <div class="col col-12">
-                <div style="height: 500px;"></div>
-                <?php 
-                if( have_rows('portoflio') ):
-                    while( have_rows('portofolio') ): the_row();
-                        echo 
-                        '<div class="portoflio-card">
-                            <img src="' . the_field('portfolio_image') . '" alt="">
-                            <div class="portfolio-description">
-                            </div>
-                        </div>';
-                    endwhile;
-                endif;
-                ?>
+                <h2 class="text-white"><?php the_field('portfolio_title'); ?></h2>
             </div>
+        </div>
+        <div class="row row-portfolio-cards">
+            <?php 
+            $portfolio_items = get_field('portfolio_items');
+            if( $portfolio_items ):
+                $card = '';
+                foreach( $portfolio_items as $portfolio_item ):
+                    $portfolio_image = get_the_post_thumbnail($portfolio_item, 'large', array('class' => 'portfolio-image'));
+                    $portfolio_title = get_the_title($portfolio_item);
+                    $portfolio_category = get_the_category($portfolio_item);
+                    
+                    $card .= 
+                    '<div class="col col-12 col-md-6">' .
+                    '<a class="portfolio-card">'. 
+                    '<div class="portfolio-card-content">'.
+                    $portfolio_image .
+                    '<p class="portfolio-descriptoin">' . $portfolio_title . '</p>' . 
+                    '<h3 class="portfolio-title">' . $portfolio_category[0]->name . '</h3>'. 
+                    '</div>'.
+                    '</a>' .
+                    '</div>';
+                endforeach;
+                echo $card;
+            endif;
+            ?>
         </div>
     </div>
 </section>
 
-<section class="section-average">
+<section class="section-average py-0">
     <div class="container">
         <div class="row">
             <div class="col col-12 col-average">

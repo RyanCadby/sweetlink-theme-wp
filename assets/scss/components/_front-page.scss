@@ -1,3 +1,136 @@
+
+/////////////////////////////////////////
+// hero section
+/////////////////////////////////////////
+.hero-wrap{
+    position: relative;
+    
+    .hero-bg-pattern{
+        height: 30px;
+        
+        .hero-svg-bg{
+            // padding-right: 10px;
+            // animation: slide 10s linear infinite;
+            overflow: visible;
+        }
+    }
+    .hero-copy-cont{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    
+        .hero-text-cont{
+            background-color: white;
+            padding: 4rem 2rem;
+        }
+    }
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+      }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes slide-alt {
+    0%{
+        transform: translateX(100%);
+      }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+/////////////////////////////////////////
+// portfolio section
+/////////////////////////////////////////
+.section-portfolio{
+    .row-portfolio-title{
+        h2{
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid $secondary;
+        }
+    }
+    .row-portfolio-cards{
+        .col{
+            
+            
+
+            a.portfolio-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                position: relative;
+                transition: color .3s ease-in-out;
+
+                &:before{
+                    content: "";
+                    background: $white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    display: block;
+                    transition: opacity .3s ease-in-out;
+                    z-index: 0;
+                    border-radius: 4px;
+                }
+
+                &:hover{
+                    &:before{
+                        opacity: 100%;
+                    }
+                    .portfolio-card-content{
+                        p{
+                            color: $primary;
+                        }
+                        h3{
+                            color: $primary;
+                        }
+                    }       
+                }
+
+                .portfolio-card-content{
+                    z-index: 10;
+                    width: 100%;
+                    padding: 2rem;
+
+                    .portfolio-image{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 4px;
+                        margin-bottom: 2rem;
+                    }
+                    p{
+                        display: block;
+                        text-align: left;
+                        color: $white;
+                        margin-bottom: .2rem;
+                    }
+                    h3{
+                        display: block;
+                        text-align: left;
+                        color: $white;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////
+// sweet section
+/////////////////////////////////////////
 section{
     &.section-average{
         .col-average{
@@ -101,45 +234,3 @@ section{
     }
 }
 
-.hero-wrap{
-    position: relative;
-    
-    .hero-bg-pattern{
-        height: 30px;
-        
-        .hero-svg-bg{
-            // padding-right: 10px;
-            // animation: slide 10s linear infinite;
-            overflow: visible;
-        }
-    }
-    .hero-copy-cont{
-        position: absolute;
-        top: 0;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    
-        .hero-text-cont{
-            background-color: white;
-            padding: 4rem 2rem;
-        }
-    }
-}
-
-@keyframes slide {
-    0%{
-        transform: translateX(0);
-      }
-    100%{
-        transform: translateX(100%);
-    }
-}
-@keyframes slide-alt {
-    0%{
-        transform: translateX(100%);
-      }
-    100%{
-        transform: translateX(0%);
-    }
-}

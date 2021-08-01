@@ -124,9 +124,15 @@ ul{
 
 // UNIVERSAL 
 section{
-    margin-bottom: 10rem;
+    // margin-bottom: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
-    &:last-of-type{
-        margin-bottom: 0;
+    &.section-footer{
+        padding-bottom: 0;
     }
+
+    // &:last-of-type{
+    //     margin-bottom: 0;
+    // }
 }
