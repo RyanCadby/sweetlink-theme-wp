@@ -48,6 +48,7 @@
 @import "./components/_front-page";
 @import "./components/_cta";
 @import "./components/_portfolio";
+@import "./components/_about";
 
 
 
@@ -87,6 +88,9 @@ p, .p{
 }
 .p-sm{
     font-size: $p-size-sm;
+}
+.p-bg{
+    font-weight: $p-bold;
 }
 a, .a{
     font-family: $p-family;

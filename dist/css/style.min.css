@@ -2797,6 +2797,9 @@ section.section-average .row-sweet .p-sweet:nth-of-type(7){font-size:16.8rem;z-i
 .section-cta .container #cta-img{position:absolute;top:-40%;left:10%;width:auto;height:180%;display:block;-webkit-transform:rotate(50deg);transform:rotate(50deg);opacity:.4}
 .section-portfolio-hero{position:relative}
 .section-portfolio-hero .hero-right{position:absolute;top:0;left:50%;margin-left:30px;height:100%;width:50%;min-width:915px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.section-about-hero{position:relative}
+.section-about-hero .hero-right{position:absolute;top:0;left:50%;margin-left:30px;height:100%;width:50%;min-width:915px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.section-how .about-service{font-family:"Open Sans",sans-serif;font-size:1rem;font-weight:700}
 html{font-size:14px;scroll-behavior:smooth;overflow-x:hidden}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.6rem;font-weight:800}
@@ -2805,6 +2808,7 @@ h3,.h3{font-family:"Rajdhani",sans-serif;font-weight:700;font-size:1.8rem}
 h4,.h4{font-family:"Rajdhani",sans-serif;font-size:1.6rem}
 p,.p{font-family:"Open Sans",sans-serif;font-size:1rem}
 .p-sm{font-size:.8rem}
+.p-bg{font-weight:700}
 a,.a{font-family:"Open Sans",sans-serif;font-size:1rem;text-decoration:none;cursor:pointer}
 a:hover,.a:hover{text-decoration:none}
 a.link{font-weight:700;color:#ffd600}

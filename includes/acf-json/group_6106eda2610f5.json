@@ -1,6 +1,6 @@
 {
     "key": "group_6106eda2610f5",
-    "title": "Portfolio",
+    "title": "Portfolio Page",
     "fields": [
         {
             "key": "field_6106edb50d7d6",
@@ -25,7 +25,7 @@
             "key": "field_6106edbf0d7d7",
             "label": "Hero Description",
             "name": "hero_description",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -58,5 +58,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627844127
+    "modified": 1627855379
 }
