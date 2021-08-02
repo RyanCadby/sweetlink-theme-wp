@@ -2795,11 +2795,18 @@ section.section-average .row-sweet .p-sweet:nth-of-type(6){font-size:17rem;z-ind
 section.section-average .row-sweet .p-sweet:nth-of-type(7){font-size:16.8rem;z-index:95}
 .section-cta{background-color:#ffd600;position:relative}
 .section-cta .container #cta-img{position:absolute;top:-40%;left:10%;width:auto;height:180%;display:block;-webkit-transform:rotate(50deg);transform:rotate(50deg);opacity:.4}
-.section-portfolio-hero{position:relative}
-.section-portfolio-hero .hero-right{position:absolute;top:0;left:50%;margin-left:30px;height:100%;width:50%;min-width:915px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.section-about-hero{position:relative}
-.section-about-hero .hero-right{position:absolute;top:0;left:50%;margin-left:30px;height:100%;width:50%;min-width:915px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .section-how .about-service{font-family:"Open Sans",sans-serif;font-size:1rem;font-weight:700}
+.section-services .row-services{padding-top:8rem;padding-bottom:8rem}
+.section-services .row-services:first-of-type{padding-top:0}
+.section-services .row-services:last-of-type{padding-bottom:0}
+.section-services .row-services .service-title{margin-bottom:2rem}
+.section-services .row-services .services-list{-webkit-column-count:3;-moz-column-count:3;column-count:3;margin-bottom:2rem}
+.section-services .row-services .services-list li{margin-right:2rem;margin-bottom:.5rem}
+.section-services .row-services .tool-list{display:-webkit-box;display:-ms-flexbox;display:flex}
+.section-services .row-services .tool-list .tool-item{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:2rem;padding-top:.5rem;padding-bottom:.5rem;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.section-services .row-services .tool-list .tool-item p{margin-left:.5rem;margin-bottom:0}
+.section-services .row-services .service-image-cont{padding:2rem}
+.section-services .row-services .service-image-cont img{width:100%;height:auto}
 html{font-size:14px;scroll-behavior:smooth;overflow-x:hidden}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.6rem;font-weight:800}
@@ -2817,6 +2824,8 @@ ul{list-style-type:none;padding:0;margin:0}
 .h1-d1{font-size:10rem;font-family:"Open Sans",sans-serif;font-weight:800;letter-spacing:-7px;color:#0a1931;margin-bottom:0}
 section{padding-top:8rem;padding-bottom:8rem}
 section.section-footer{padding-bottom:0}
+section.section-child-hero{position:relative}
+section.section-child-hero .hero-right{position:absolute;top:0;left:50%;margin-left:30px;height:100%;width:50%;min-width:915px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 @media(prefers-reduced-motion:reduce){.carousel-item{-webkit-transition:none;transition:none}
 .carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-right{-webkit-transition:none;transition:none}
 .carousel-control-prev,.carousel-control-next{-webkit-transition:none;transition:none}

@@ -58,7 +58,7 @@ if( function_exists('acf_add_options_page') ) {
 // register custom post types
 function sl_custom_post_types() {
  
-    register_post_type( 'movies',
+    register_post_type( 'portfolio',
     // CPT Options
         array(
             'labels' => array(
@@ -68,6 +68,23 @@ function sl_custom_post_types() {
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'portfolio'),
+            'show_in_rest' => false,
+            'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+            'taxonomies' => array('category', 'post_tag')
+ 
+        )
+    );
+
+    register_post_type( 'services',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'services'),
             'show_in_rest' => false,
             'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
             'taxonomies' => array('category', 'post_tag')

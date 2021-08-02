@@ -4,7 +4,7 @@
 get_header();
 ?>
 
-<section class="section-portfolio-hero">
+<section class="section-child-hero">
     <div class="container">
         <div class="row">
             <div class="col col-12 col-md-6">
