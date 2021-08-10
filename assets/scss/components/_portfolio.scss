@@ -1,0 +1,86 @@
+section{
+    &.section-portfolio{
+
+        .portfolio-card{
+            padding: 0 1rem;
+            
+            
+            &:hover{
+                .portfolio-info .portfolio-link{
+                    top: -2rem;
+
+                    a{
+                        opacity: 1;
+                        transition: opacity .3s ease-in;
+                        transition-delay: .1s;
+
+                        &:hover{
+                            transition: color .3s ease-in-out;
+                        }
+                    }
+                }
+            }
+            
+
+            .portfolio-image{
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+            }
+            .portfolio-info{
+                padding: 1rem;
+                background: $navy;
+                position: relative;
+                top: -2rem;
+                width: 80%;
+                border-radius: 4px;
+                color: $white;
+                position: relative;
+
+                .portfolio-link{
+                    position: absolute;
+                    top: 0;
+                    background: $navy;
+                    transition: all .3s ease-out;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    padding: 1rem;
+                    z-index: 1;
+                    border-radius: 4px 4px 0 0;
+
+                    a{
+                        color: $secondary;
+                        opacity: 0;
+                        transition: opacity .1s;
+                        transition-delay: 0;
+                        display: block;
+                        width: 100%;
+                        
+
+                        &:hover{
+                            transition: color .3s ease-in-out;
+                            color: $l-yellow;
+                        }
+                    }
+                }
+
+                .portfolio-description{
+                    position: relative;
+                    z-index: 10;
+                    background: $navy;
+    
+                    p{
+                        margin-bottom: .2rem;
+                        z-index: 20;
+                    }
+                    h3{
+                        margin-bottom: 0;
+                        z-index: 20;
+                    }
+                }
+
+            }
+        }
+    }
+}

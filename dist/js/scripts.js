@@ -137,4 +137,22 @@ jQuery(function ($) {
       });
     }); // end scroll function
   }); // end window ready
+
+  $(document).on('click', function (e) {
+    console.log(e.target);
+  }); // open mobile menu
+
+  $('#navbar-mobile').on("click", function () {
+    if ($('.navbar').hasClass('active')) {
+      $('.navbar-link-container').fadeOut('fast');
+      $('.navbar').removeClass('active');
+      $('.navbar .fa-times').addClass('d-none');
+      $('.navbar .fa-bars').removeClass('d-none');
+    } else {
+      $('.navbar-link-container').css("display", "flex").hide().fadeIn('fast');
+      $('.navbar').addClass('active');
+      $('.navbar .fa-times').removeClass('d-none');
+      $('.navbar .fa-bars').addClass('d-none');
+    }
+  });
 }); // end jquery function

@@ -19,6 +19,10 @@
     <div class="container nav-cont bg-primary">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar navbar-brand" href="<?= get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/dist/images/sl-logo-text-h-white.svg'; ?>" alt="Sweet Link Studio Logo"></a>
+            <button id="navbar-mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times d-none"></i>
+            </button>
 
             <?php
                 $nav_args = array(
@@ -30,6 +34,7 @@
                 );
                 wp_nav_menu($nav_args);
             ?>
+            
         </nav>
     </div>
 </header>

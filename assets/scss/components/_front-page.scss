@@ -236,5 +236,11 @@ section{
             }
         }
     }
+
+    &.section-services{
+        .row-services{
+            padding-bottom: 0;
+        }
+    }
 }
 
