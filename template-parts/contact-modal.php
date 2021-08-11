@@ -18,11 +18,11 @@ global $sl_admin_active;
                 <i class="fas fa-times"></i>
             </button>
             <div class="row row-contact pt-6">
-                <div class="col col-12 col-md-6 col-email">
+                <div class="col col-12 col-md-6 col-email order-2 order-md-1">
                     <p>Don't like forms?</p>
                     <a href="mailto:ryan@sweetlinkstudio.com" class="contact-email h3">Ryan@SweetLinkStudio.com</a>
                 </div>
-                <div class="col col-12 col-md-6 col-form">
+                <div class="col col-12 col-md-6 col-form order-1 order-md-2 mb-4 mb-md-0">
                     <?php echo do_shortcode('[contact-form-7 id="30" title="Contact form 1"]'); ?>
                 </div>
             </div>

@@ -6,8 +6,8 @@
     <div class="container">
         <div class="row mb-2">
             <!-- about info --> 
-            <div class="col col-12 col-md-6 col-logo">
-                <div class="footer-logo-cont mb-2">
+            <div class="col col-12 col-sm-6 col-logo">
+                <div class="footer-logo-cont mb-1 mb-md-2">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/dist/images/sl-logo-text-navy.svg'; ?>" alt="Sweet Link Studio Logo with text" class="footer-logo">
                 </div>
                 <p class="m-0">Don't be shy, say hi!</p>
@@ -15,7 +15,7 @@
             </div>
 
             <!-- footer nav -->
-            <div class="col col-12 col-md-5 col-nav">
+            <div class="col col-6 col-sm-5 col-nav">
                 <?php if ( has_nav_menu( 'footer-menu' ) ) : ?>
                     <nav class="footer-navigation">
                         <?php
@@ -32,7 +32,7 @@
             </div>
 
             <!-- social links -->
-            <div class="col col-12 col-md-1 col-social">
+            <div class="col col-6 col-sm-1 col-social">
                 <ul class="social-list">
                     <li class="social-item">
                         <a href="https://twitter.com" class="social-link social-twitter"><i class="fab fa-twitter"></i></a>

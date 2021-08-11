@@ -24,6 +24,7 @@
         .hero-text-cont{
             background-color: $primary;
             padding: 4rem 2rem;
+            border-radius: 4px;
 
             h1{
                 color: $white;
@@ -133,7 +134,7 @@
 }
 
 /////////////////////////////////////////
-// sweet section
+// average section
 /////////////////////////////////////////
 section{
     &.section-average{
@@ -157,6 +158,12 @@ section{
                     color: $primary;
                     display: inline-block;
                     padding: 0 2rem;
+                    font-size: 13vw;
+                    font-family: $p-family;
+                    font-weight: $p-black;
+                    letter-spacing: -4px;
+                    color: $primary;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -198,35 +205,28 @@ section{
                 position: absolute;
                 top: 0;
                 margin-bottom: 0;
-                width: 100%;
+                width: calc(100% - 30px);
                 text-align: center;
                 // z-index: 101;
                 &:nth-of-type(1){
-                    font-size: 18rem;
                     z-index: 101;
                 }
                 &:nth-of-type(2){
-                    font-size: 17.8rem;
                     z-index: 100;
                 }
                 &:nth-of-type(3){
-                    font-size: 17.6rem;
                     z-index: 99;
                 }
                 &:nth-of-type(4){
-                    font-size: 17.4rem;
                     z-index: 98;
                 }
                 &:nth-of-type(5){
-                    font-size: 17.2rem;
                     z-index: 97;
                 }
                 &:nth-of-type(6){
-                    font-size: 17rem;
                     z-index: 96;
                 }
                 &:nth-of-type(7){
-                    font-size: 16.8rem;
                     z-index: 95;
                 }
                 // &:nth-of-type(7){
@@ -244,3 +244,84 @@ section{
     }
 }
 
+//////////////////////////
+// XL Screen
+//////////////////////////
+@media only screen and (min-width: 1200px){
+    section{
+        &.section-average{
+            .container{
+                .col-average{
+                    .average-cont{
+                        .average-text{
+                            font-size: 12rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////
+// Tablet
+//////////////////////////
+@media only screen and (max-width: 991.98px){
+    section{
+        &.section-average{
+            .container{
+                max-width: unset;
+
+                .average-text{
+                    // font-size: 8rem;
+                }
+            }
+        }
+    }
+}
+
+
+//////////////////////////
+// Mobile
+//////////////////////////
+@media only screen and (max-width: 767.98px){
+    section{
+        // hero section
+        &.section-hero{
+
+            .hero-wrap{
+                
+                .hero-bg-pattern{
+                    &:nth-of-type(n+14):nth-of-type(-n+20){
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        // average section
+        &.section-average{
+            .container{
+                max-width: unset;
+
+                .average-text{
+                    font-size: 6rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px){
+    section{
+        &.section-average{
+            .container{
+                max-width: unset;
+
+                .average-text{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}

@@ -55,7 +55,7 @@
 
 // GLOBALS
 html{
-    font-size: 14px;
+    font-size: 15px;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -133,6 +133,7 @@ section{
     padding-bottom: 8rem;
 
     &.section-footer{
+        padding-top: 4rem;
         padding-bottom: 0;
     }
 
@@ -149,6 +150,59 @@ section{
             min-width: 915px;
             display: flex;
             flex-direction: column;
+            z-index: -1;
+        }
+    }
+}
+p:last-of-type{
+    margin-bottom: 0;
+}
+
+
+//////////////////////////
+// Tablet
+//////////////////////////
+@media only screen and (max-width: 991.98px){
+    html{
+        font-size: 14px;
+    }
+    section{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        &.section-child-hero{
+        
+            .hero-right{
+                left: 60%;
+            }
+        }
+    }
+}
+
+
+//////////////////////////
+// Mobile
+//////////////////////////
+@media only screen and (max-width: 767.98px){
+    section{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 575.98px){
+    html{
+        font-size: 13px;
+    }
+    section{
+        &.section-average{
+            .container{
+                max-width: unset;
+
+                .average-text{
+                    font-size: 5rem;
+                }
+            }
         }
     }
 }

@@ -54,14 +54,14 @@ nav.navbar{
             .navbar-brand{
                 z-index: 99;
                 position: fixed;
-                left: 3rem;
-                top: 3rem;
+                left: 2rem;
+                top: 1.5rem;
             }
             #navbar-mobile{
                 font-size: 2rem;
                 position: fixed;
-                right: 3rem;
-                top: 3rem;
+                right: 2rem;
+                top: 2rem;
             }
             .navbar-link-container{
                 align-items: center;
@@ -84,6 +84,9 @@ nav.navbar{
                 text-align: center;
 
                 li{
+                    &.current-menu-item{
+                        text-decoration: underline;
+                    }
                     a{
                         display: block;
                         font-size: $h2-size;

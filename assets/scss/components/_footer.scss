@@ -1,9 +1,4 @@
 .section-footer{
-    // ul{
-    //     li{
-    //         text-align: right;
-    //     }
-    // }
 
     .menu-footer-nav-container{
         display: flex;
@@ -24,5 +19,19 @@
         display: block;
         height: 2px;
         background-color: $primary;
+    }
+}
+
+@media only screen and (max-width: 575.98px){
+    .section-footer{
+        .col-nav{
+            margin-top: 2rem;
+        }
+        .col-social{
+            margin-top: 2rem;
+        }
+        .menu-footer-nav-container{
+            justify-content: flex-start;
+        }
     }
 }

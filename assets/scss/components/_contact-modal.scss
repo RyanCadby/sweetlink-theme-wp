@@ -48,8 +48,8 @@
             .row-contact{
                 .col-email{
                     p{
-                        position: absolute;
-                        top: calc(-1rem - 5px);
+                        // position: absolute;
+                        // top: calc(-1rem - 5px);
                     }
                 }
             }
@@ -72,6 +72,46 @@
                                 font-size: 1.25rem;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//////////////////////////
+// Tablet
+//////////////////////////
+@media only screen and (max-width: 991.98px){
+    section{
+        &#contact-modal-section{
+            .contact-modal-wrap{
+                border-width: 50px;
+
+                .col-email{
+                    .contact-email{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//////////////////////////
+// Mobile
+//////////////////////////
+@media only screen and (max-width: 575.98px){
+    section{
+        &#contact-modal-section{
+            .contact-modal-wrap{
+                border-width: 20px;
+
+                .col-email{
+                    .contact-email{
+                        font-size: 1.2rem;
                     }
                 }
             }

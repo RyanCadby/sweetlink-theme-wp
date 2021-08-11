@@ -12,7 +12,7 @@
     <div class="container">
         <img id="cta-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/sl-logo-white-stroke.svg" alt="Sweet Link Logo White">
         <div class="row justify-content-center">  
-            <div class="col col-12 col-sm-8 col-md-6">
+            <div class="col col-12 col-sm-10">
                 <?php
                 global $post;
                 $cta_page_id = $post->ID;

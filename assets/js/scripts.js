@@ -97,18 +97,29 @@ jQuery(function ($) {
     var sweet_top_arr = [];
     var sweet_top = 0;
     // font size
-    var sweet_font_size = 18;
-    var sweet_font = $('.p-sweet:first-of-type').css('font-size', sweet_font_size + 'rem');
-    var sweet_font_arr = [sweet_font_size];
+    var sweet_font_size = '22';
+    var sweet_font_size_suff = 'rem';
+    var sweet_font_size_round;
+    if( $('html').width() < 992){
+        sweet_font_size = '28';
+        sweet_font_size_suff = 'vw'
+    }
+    console.log($('html').width());
+    
     
 
+
+    // $('.p-sweet:first-of-type').css('font-size', sweet_font_size + 'vw');
+    var sweet_counter = 1;
     sweet.each(function(){
+        $('.p-sweet:nth-of-type(' + sweet_counter + ')').css('font-size', sweet_font_size + sweet_font_size_suff);
         // set position
         sweet_top = $(this).position().top + 50 + sweet_top;
         sweet_top_arr.push(sweet_top);
         // set font size
-        sweet_font_size = Math.round((sweet_font_size - .2) * 10) / 10;
-        sweet_font_arr.push(sweet_font_size);
+        sweet_font_size_round = Math.round((sweet_font_size - .2) * 10) / 10;
+        sweet_font_size = sweet_font_size_round;
+        ++sweet_counter;
     });
 
     // Text strike through animation
@@ -146,9 +157,9 @@ jQuery(function ($) {
             bottom_of_target = target_position + target_height;
             target_percentage_position = Math.floor(((bottom_of_screen - bottom_of_target)  / (window_height - (window_height * .6)) * 400));
 
-            console.log('bottom of screen: ' + bottom_of_screen);
-            console.log('bottom of target: ' + bottom_of_target);
-            console.log('target percentage position: ' + target_percentage_position);
+            // console.log('bottom of screen: ' + bottom_of_screen);
+            // console.log('bottom of target: ' + bottom_of_target);
+            // console.log('target percentage position: ' + target_percentage_position);
             if( bottom_of_screen >= bottom_of_target && target_percentage_position <= sweet_top_arr[i] ){
                 $(this).css('top', target_percentage_position);
             } else if( target_percentage_position > sweet_top_arr[i]){
@@ -163,11 +174,19 @@ jQuery(function ($) {
     }); // end scroll function
 
 
+    // about page flourish positioning
+    if( $('html').width() < 768){
+        console.log($(document).width())
+        var about_hero_top = parseInt($('.section-about-hero').css('padding-top').slice(0, -2)) + $('.col-hero-text').outerHeight();
+        $('.hero-right').css('top', about_hero_top);
+    }
     
-    
+
 
 
     }); // end window ready
+
+
 
     $(document).on('click', function(e){
         console.log(e.target);

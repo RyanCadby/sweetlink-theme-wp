@@ -17,3 +17,16 @@
         }
     }
 }
+
+@media only screen and (max-width: 575.98px){
+    .section-cta{
+        .container{
+            #cta-img{
+                right: -10%;
+                transform: rotate(-50deg);
+                left: unset;
+            }
+        }
+    }
+}
+

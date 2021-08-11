@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<section class="py-0">
+<section class="section-hero py-0">
     <div class="container hero-container">
         <div class="hero-wrap">
             <div class="hero-pattern-cont">
@@ -25,7 +25,7 @@
                         <h1 class="d-xl"><?php the_field('hero_text'); ?></h1>
                     </div>
                 </div>
-                <div class="col col-12 col-md-4"></div>
+                <!-- <div class="col col-12 col-md-4"></div> -->
             </div>
         </div>
         
@@ -74,27 +74,27 @@
             <div class="col col-12 col-average">
                 <div class="average-cont" data-animate="0">
                     <div class="average-strike"></div>
-                    <p class="average-text h1-d1">Satisfactory</p>
+                    <p class="average-text">Satisfactory</p>
                 </div>
                 <div class="average-cont" data-animate="0">
                     <div class="average-strike"></div>
-                    <p class="average-text h1-d1">Average</p>
+                    <p class="average-text">Average</p>
                 </div>
                 <div class="average-cont" data-animate="0">
                     <div class="average-strike"></div>
-                    <p class="average-text h1-d1">Sufficient</p>
+                    <p class="average-text">Sufficient</p>
                 </div>
                 <div class="average-cont" data-animate="0">
                     <div class="average-strike"></div>
-                    <p class="average-text h1-d1">Good&nbsp;Enough</p>
+                    <p class="average-text">Good&nbsp;Enough</p>
                 </div>
                 <div class="average-cont" data-animate="0">
                     <div class="average-strike"></div>
-                    <p class="average-text h1-d1">Mediocre</p>
+                    <p class="average-text">Mediocre</p>
                 </div>
                 <div class="average-cont" data-animate="0">
                     <div class="average-strike"></div>
-                    <p class="average-text h1-d1">Vanilla</p>
+                    <p class="average-text">Vanilla</p>
                 </div>
             </div>
         </div>
@@ -131,14 +131,14 @@
                 <div class="sweet-cont">
                     <p class="p-sweet sweet-slide">Sweet!</p>
                 </div> -->
-                <p class="p-sweet">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
-                <div class="sweet-spacer"></div>
+                <p class="p-sweet sweet-slide">Sweet!</p>
+                <!-- <div class="sweet-spacer"></div> -->
             </div>
         </div>
     </div>
@@ -154,10 +154,10 @@
             </div> 
         </div>
         <div class="row">
-            <div class="col col-12 col-md-5">
+            <div class="col col-12 col-md-5 pb-2 pb-md-0">
                 <?php the_field('services_copy');?>
             </div>
-            <div class="col col-12 col-md-3">
+            <div class="col col-12 col-sm-6 col-md-3 pb-2 pb-md-0">
                 <?php echo
                 '<h3>' . get_field('design_title') . '</h3>';
                 if( have_rows('design_items') ):
@@ -170,7 +170,7 @@
                 endif;
                 ?>
             </div>
-            <div class="col col-12 col-md-4">
+            <div class="col col-12 col-sm-6 col-md-4">
                 <?php echo 
                 '<h3>' . get_field('development_title') . '</h3>';
                 if( have_rows('development_items') ):

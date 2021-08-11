@@ -5,18 +5,34 @@ get_header();
 ?>
 
 
-<section class="section-child-hero">
+<?php //get_template_part('template-parts/child', 'header', array());?>
+
+<section class="section-child-hero section-about-hero">
     <div class="container">
         <div class="row">
-            <div class="col col-12 col-md-6">
+            <div class="col col-12 col-md-6 col-hero-text">
                 <h1><?php the_field('hero_title'); ?></h1>
-                <p><?php the_field('hero_description'); ?></p>
+                <?php the_field('hero_description'); ?>
+            </div>
+
+            <div class="col col-sm-6 col-hero-img">
+                <div class="hero-card">
+                    <?php 
+                    $hero_img_id = get_field('hero_image');
+                    $hero_img_title = get_field('hero_image_title');
+                    $hero_img_description = get_field('hero_image_description');
+                    $hero_img_print = wp_get_attachment_image($hero_img_id, 'full') .
+                    '<p class="p-bg">' . $hero_img_title . '</p>' . 
+                    '<p class="p-sm">' . $hero_img_description . '</p>';
+                    echo $hero_img_print;
+                    ?>
+                </div>
             </div>
         </div>
     </div>
     
     <div class="hero-right">
-        <?php for($i = 0; $i <= 13; $i++): ?>
+        <?php for($i = 0; $i <= 17; $i++): ?>
             <div id="child-pattern-<?= $i ?>" class="child-hero-bg-pattern pattern-<?= $i ?>">
                 <svg id="child-hero-svg" class="child-hero-svg-bg" width="100%" height="30px" viewBox="0 0 30 1" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -40,17 +56,23 @@ get_header();
                 <?php
                 if( have_rows('how_we_work_buttons') ):
                     $buttons = '';
+                    $button_count = 0;
                     while( have_rows('how_we_work_buttons') ): the_row();
                         $text = get_sub_field('text');
                         $link = get_sub_field('link');
                         $type = get_sub_field('type');
-                        $buttons .= '<a href="' . $link . '" class="btn btn-' . $type . '">' . $text . '</a>';
+                        $button_space = '';
+                        if($button_count > 0){
+                            $button_space = 'ml-1';
+                        }
+                        $buttons .= '<a href="' . $link . '" class="btn btn-' . $type . ' ' . $button_space . '">' . $text . '</a>';
+                        $button_count++;
                     endwhile;
                     echo $buttons;
                 endif;
                 ?>
             </div>
-            <div class="col col-12 col-md-4 offset-md-1">
+            <!-- <div class="col col-12 col-md-4 offset-md-1">
                 <h2><?php the_field('services_title'); ?></h2>
                 <?php
                 if( have_rows('services_links') ):
@@ -64,14 +86,14 @@ get_header();
                     echo $services;
                 endif;
                 ?>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
 
 <section class="section-what">
     <div class="container">
-        <div class="row">
+        <div class="row row-what">
             <div class="col col-12 col-md-6">
                 <h2><?php the_field('what_we_care_about_title'); ?></h2>
                 <?php the_field('what_we_care_about_description'); ?>
@@ -81,14 +103,20 @@ get_header();
             <?php 
             if( have_rows('what_we_care_about_items') ):
                 $items = '';
+                $what_count = 1;
                 while( have_rows('what_we_care_about_items') ): the_row();
                     $title = get_sub_field('title');
                     $desc = get_sub_field('description');
+                    $spacer = '';
+                    if($what_count == 1 || $what_count == 3){
+                        // $spacer = 'offset-md-1';
+                    }
                     $items .= 
-                    '<div class="col col-12 col-md-4">' .
+                    '<div class="col col-12 col-sm-6 col-md-5 mb-2 ' . $spacer . '">' .
                         '<p class="p-bg">' . $title . '</p>' .
                         '<p>' . $desc . '</p>' .
                     '</div>';
+                    ++$what_count;
                 endwhile;
                 echo $items;
             endif;
@@ -96,5 +124,7 @@ get_header();
         </div>
     </div>
 </section>
+
+<?php get_template_part('template-parts/cta');?>
 
 <?php get_footer();?>

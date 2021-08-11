@@ -41,6 +41,68 @@
             "delay": 0
         },
         {
+            "key": "field_61140838f4472",
+            "label": "Hero Image",
+            "name": "hero_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_61140843f4473",
+            "label": "Hero Image Title",
+            "name": "hero_image_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6114085ff4474",
+            "label": "Hero Image Description",
+            "name": "hero_image_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61071a7b233a8",
             "label": "How We Work Title",
             "name": "how_we_work_title",
@@ -355,5 +417,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627908245
+    "modified": 1628702916
 }
