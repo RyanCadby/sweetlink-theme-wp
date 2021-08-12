@@ -64,6 +64,25 @@
                     "delay": 0
                 },
                 {
+                    "key": "field_6115ae2be7d64",
+                    "label": "Target Modal",
+                    "name": "target_modal",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
                     "key": "field_60e63ca8eb445",
                     "label": "Button Text",
                     "name": "button_text",
@@ -121,5 +140,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627496815
+    "modified": 1628811068
 }

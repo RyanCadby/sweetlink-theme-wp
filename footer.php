@@ -1,5 +1,10 @@
     
-<?php get_template_part('template-parts/contact', 'modal', array());?>
+<?php 
+if( !is_page('contact') ){
+    get_template_part('template-parts/contact', 'modal', array());
+}
+?>
+
 
 
 <section class="section-footer">
@@ -34,21 +39,21 @@
             <!-- social links -->
             <div class="col col-6 col-sm-1 col-social">
                 <ul class="social-list">
-                    <li class="social-item">
-                        <a href="https://twitter.com" class="social-link social-twitter"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://linkedin.com" class="social-link social-linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-link social-instagram"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-link social-youtube"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-link social-tiktok"><i class="fab fa-tiktok"></i></a>
-                    </li>
+                    <?php 
+                        if( have_rows('contact_information', 'option') ):
+                            while( have_rows('contact_information', 'option') ): the_row();
+                                if( have_rows('social_media') ):
+                                    $social_print = '';
+                                    while( have_rows('social_media') ): the_row();
+                                        $social_print .= '<li class="social-item">';
+                                        $social_print .= '<a href="' . get_sub_field('url') . '" class="social-link" target="_blank"><i class="fab ' . get_sub_field('platform') . '"></i></a>';
+                                        $social_print .= '</li>';
+                                    endwhile;
+                                    echo $social_print;
+                                endif;
+                            endwhile;
+                        endif;
+                    ?>
                 </ul>
             </div>
         </div> <!-- end row -->

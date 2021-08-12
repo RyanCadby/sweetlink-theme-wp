@@ -30,12 +30,24 @@ global $sl_admin_active;
                 <div class="col col-12">
                     <p class="p-sm">Social</p>
                     <div class="social-cont">
-                        <a href="https://facebook.com" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="https://facebook.com" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com" class="social-link"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://facebook.com" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="https://facebook.com" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <?php 
+                        if( have_rows('contact_information', 'option') ):
+                            while( have_rows('contact_information', 'option') ): the_row();
+                                if( have_rows('social_media') ):
+                                    while( have_rows('social_media') ): the_row();
+                                        $social_print = '<a href="' . get_sub_field('url') . '" class="social-link" target="_blank"><i class="fab ' . get_sub_field('platform') . '"></i></a>';
+                                    endwhile;
+                                    echo $social_print;
+                                endif;
+                            endwhile;
+                        endif;
+                        ?>
+                        <!-- // <a href="https://facebook.com" class="social-link"><i class="fab fa-twitter"></i></a>
+                        // <a href="https://facebook.com" class="social-link"><i class="fab fa-instagram"></i></a>
+                        // <a href="https://facebook.com" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        // <a href="https://facebook.com" class="social-link"><i class="fab fa-youtube"></i></a>
+                        // <a href="https://facebook.com" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        // <a href="https://facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a> -->
                     </div>
                 </div>
             </div>

@@ -9,6 +9,11 @@
         }
     }
 
+    .col-social{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
     .social-list{
         li{
             text-align: right;

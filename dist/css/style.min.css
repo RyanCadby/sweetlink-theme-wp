@@ -2721,6 +2721,7 @@ mark,.mark{padding:.2em;background-color:#fcf8e3}
 .fa.fa-cab:before{content:"\f1ba"}
 .section-footer .menu-footer-nav-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 .section-footer .menu-footer-nav-container li{margin-bottom:.5rem}
+.section-footer .col-social{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 .section-footer .social-list li{text-align:right}
 .section-footer .hr{display:block;height:2px;background-color:#0a1931}
 nav.navbar a.navbar-brand{display:block;width:12rem;padding:.5rem 0}
@@ -2836,6 +2837,7 @@ section.section-what .row-what{margin-bottom:2rem}
 .page-template-template-services .section-services .service-img-repeat-cont#service-img-1{opacity:1}
 section.section-child-hero{position:relative}
 section.section-child-hero .hero-right{position:absolute;top:0;left:50%;margin-left:30px;height:100%;width:50%;min-width:915px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;z-index:-1}
+.page-template-template-contact .section-contact{height:calc(100vh - 64px)}
 html{font-size:15px;scroll-behavior:smooth;overflow-x:hidden}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.6rem;font-weight:800}

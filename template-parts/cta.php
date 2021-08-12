@@ -24,8 +24,15 @@
                             $cta_title = get_sub_field('title');
                             $cta_btn_text = get_sub_field('button_text');
                             $cta_btn_link = get_sub_field('button_link');
+                            $cta_target_modal = get_sub_field('target_modal');
+                            $cta_modal_class = '';
+                            if( $cta_target_modal > 0 ){
+                                $cta_btn_link = '#sl-contact';
+                                $cta_modal_class = 'contact-modal-show';
+                            }
                             $cta_echo = '<div class="cta-text-cont">' . $cta_title . '</div>' . 
-                            '<a class="btn btn-outline" href="' . $cta_btn_link . '"><span>' . $cta_btn_text . '<span></a>';
+                            // '<button class="btn btn-primary contact-modal-show"><span>' . $cta_btn_text . '</span></a>';
+                            '<a class="btn btn-outline ' . $cta_modal_class . '" href="' . $cta_btn_link . '"><span>' . $cta_btn_text . '</span></a>';
                         endwhile;
                         echo $cta_echo;
                     endif;

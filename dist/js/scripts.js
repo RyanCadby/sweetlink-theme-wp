@@ -22,7 +22,8 @@ jQuery(function ($) {
     var menuContactLink = '<li id="menu-item-contact" class="menu-item nav-item"><a id="contact-modal-show" href="#sl-contact"" class="nav-link">Contact</a></li>';
     $('#menu-primary-nav').append(menuContactLink); // contact link click
 
-    $('#contact-modal-show').on('click', function () {
+    $('#contact-modal-show, .contact-modal-show').on('click', function (e) {
+      e.preventDefault();
       $('#contact-modal-section').fadeIn(300);
       $('html').css('overflow', 'hidden');
     });
