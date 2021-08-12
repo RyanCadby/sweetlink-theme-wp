@@ -1,0 +1,77 @@
+// UNIVERSAL 
+section{
+    &.section-child-hero{
+        position: relative;
+    
+        .hero-right{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: 30px;
+            height: 100%;
+            width: 50%;
+            min-width: 915px;
+            display: flex;
+            flex-direction: column;
+            z-index: -1;
+        }
+    }
+}
+
+
+//////////////////////////
+// Tablet
+//////////////////////////
+@media only screen and (max-width: 991.98px){
+    section{
+        &.section-child-hero{
+        
+            .hero-right{
+                left: 60%;
+
+                .child-hero-bg-pattern{
+                    &:nth-of-type(n+10):nth-of-type(-n+17){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//////////////////////////
+// Horizontal Phone
+//////////////////////////
+@media only screen and (max-width: 767.98px){
+    section{
+        &.section-child-hero{
+        
+            div.hero-right{
+                left: 75%;
+
+                .child-hero-bg-pattern{
+                    &:nth-of-type(n+10):nth-of-type(-n+17){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////
+// Mobile
+//////////////////////////
+@media only screen and (max-width: 575.98px){
+    section{
+        &.section-child-hero{
+        
+            div.hero-right{
+
+                .child-hero-bg-pattern{
+                }
+            }
+        }
+    }
+}

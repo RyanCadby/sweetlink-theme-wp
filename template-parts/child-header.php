@@ -12,7 +12,7 @@
 <section class="section-child-hero">
     <div class="container">
         <div class="row">
-            <div class="col col-12 col-sm-8 col-md-6">
+            <div class="col col-12 col-sm-10 col-md-8 col-lg-6">
                 <h1><?php the_field('hero_title'); ?></h1>
                 <p><?php the_field('hero_description'); ?></p>
             </div>

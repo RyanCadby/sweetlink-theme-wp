@@ -168,6 +168,26 @@ section{
             }
         }
         .row-dont-do{
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            height: 100vh;
+            width: 100vw;
+            background: $white;
+            transition: .3s ease-in-out;
+
+            .col{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2{
+                    text-align: left;
+                }
+            }
+
             span{
                 display: block;
                 position: relative;
@@ -178,17 +198,17 @@ section{
                     margin-bottom: 0;
                 }
 
-                &:before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: $l-yellow;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -1;
-                }
+                // &:before{
+                //     content: "";
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     background: $l-yellow;
+                //     display: block;
+                //     width: 100%;
+                //     height: 100%;
+                //     z-index: -1;
+                // }
             }
         }
         .row-sweet{
@@ -210,24 +230,31 @@ section{
                 // z-index: 101;
                 &:nth-of-type(1){
                     z-index: 101;
+                    color: $navy;
                 }
                 &:nth-of-type(2){
                     z-index: 100;
+                    color: $l-navy;
                 }
                 &:nth-of-type(3){
                     z-index: 99;
+                    color: $blue;
                 }
                 &:nth-of-type(4){
                     z-index: 98;
+                    color: $l-blue;
                 }
                 &:nth-of-type(5){
                     z-index: 97;
+                    color: $yellow;
                 }
                 &:nth-of-type(6){
                     z-index: 96;
+                    color: $l-yellow;
                 }
                 &:nth-of-type(7){
                     z-index: 95;
+                    color: $white;
                 }
                 // &:nth-of-type(7){
                 //     font-size: 16.6rem;

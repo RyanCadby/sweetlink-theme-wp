@@ -100,9 +100,10 @@
         </div>
         <div class="row row-dont-do py-5">
             <div class="col col-12">
-                <h1 class="text-center h1-d1"><span>DON'T DO</span> <span>"mediocre"</span> <span>Let's Make Something</span></h1>
+                <h2 class=""><span>DON'T DO</span> <span>"mediocre"</span> <span>Let's Make Something</span></h2>
             </div>
         </div>
+        <div class="placeholder" style="height: 200vh"></div>
         <!-- <div class="row py-5">
             <div class="col col-12">
                 <h1 class="text-center h1-d1">We work hard to deliver products that make you want to say</h1>
