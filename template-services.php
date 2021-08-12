@@ -47,12 +47,13 @@ $posts = get_posts($args);
                     <?php
                     if($posts):
                         $services = '';
+                        $service_count = 1;
                         foreach ( $posts as $post ):
                             setup_postdata($post);
                             $id = get_the_ID();
-                            $services .= '<div class="row row-services">' . 
+                            $services .= '<div class="row row-services" id="row-service-' . $service_count . '">' . 
                             '<div class="col col-12 col-md-8">' . 
-                            '<h2 class="service-title">' . $post->post_title . '</h2>';
+                            '<h2 class="service-title" id="title-' . $service_count . '">' . $post->post_title . '</h2>';
 
                             // build tags
                             if( have_rows('tags', $id) ):
@@ -93,9 +94,13 @@ $posts = get_posts($args);
                             $services .= '</div>'; // end left col
 
                             $services .= '<div class="col col-12 col-md-4"><div class="service-image-cont">'. 
-                            get_the_post_thumbnail($id, 'full') . 
-                            '</div></div>' . '</div>';
+                            // get_the_post_thumbnail($id, 'full') . 
+                            '</div>' . // end col
+                            '</div>' . // end col
+                            '</div>'; // end row
 
+                            $services .= '<div class="service-img-repeat-cont" id="service-img-' . $service_count . '">' . get_the_post_thumbnail($id, 'full') . '</div>';
+                            ++$service_count;
 
 
                         endforeach;
@@ -107,5 +112,5 @@ $posts = get_posts($args);
         </div>
     </section>
 
-
+<?php get_template_part('template-parts/cta');?>
 <?php get_footer();?>

@@ -2817,6 +2817,7 @@ section.section-about-hero div.hero-right{margin-left:0}
 section.section-what .row-what{margin-bottom:2rem}
 .section-how .about-service{font-family:"Open Sans",sans-serif;font-size:1rem;font-weight:700}
 .section-how a{margin-top:1rem}
+.section-services .container{position:relative}
 .section-services .row-services{padding-top:8rem;padding-bottom:8rem}
 .section-services .row-services:first-of-type{padding-top:0}
 .section-services .row-services:last-of-type{padding-bottom:0}
@@ -2826,8 +2827,9 @@ section.section-what .row-what{margin-bottom:2rem}
 .section-services .row-services .tool-list{display:-webkit-box;display:-ms-flexbox;display:flex}
 .section-services .row-services .tool-list .tool-item{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:2rem;padding-top:.5rem;padding-bottom:.5rem;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .section-services .row-services .tool-list .tool-item p{margin-left:.5rem;margin-bottom:0}
-.section-services .row-services .service-image-cont{padding:2rem}
 .section-services .row-services .service-image-cont img{width:100%;height:auto}
+.section-services .service-img-repeat-cont{position:absolute;top:0;right:0;opacity:0}
+.section-services .service-img-repeat-cont#service-img-1{opacity:1}
 html{font-size:15px;scroll-behavior:smooth;overflow-x:hidden}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.6rem;font-weight:800}
@@ -2843,6 +2845,7 @@ a.link{font-weight:700;color:#ffd600}
 ul{list-style-type:none;padding:0;margin:0}
 .admin-true{margin-top:30px}
 .h1-d1{font-size:10rem;font-family:"Open Sans",sans-serif;font-weight:800;letter-spacing:-7px;color:#0a1931;margin-bottom:0}
+.d-none-soft{display:none}
 section{padding-top:8rem;padding-bottom:8rem}
 section.section-footer{padding-top:4rem;padding-bottom:0}
 section.section-child-hero{position:relative}

@@ -1,4 +1,7 @@
 .section-services{
+    .container{
+        position: relative;
+    }
     .row-services{
         padding-top: 8rem;
         padding-bottom: 8rem;
@@ -40,9 +43,10 @@
                 }
             }
         }
+        
         // Image
         .service-image-cont{
-            padding: 2rem;
+            // padding: 2rem;
 
             img{
                 width: 100%;
@@ -51,4 +55,17 @@
         }
         
     } // end .row-servicees
+
+    // image repeat
+    .service-img-repeat-cont{
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+
+        &#service-img-1{
+            opacity: 1;
+        }
+    }
+
 } // end .section-services
