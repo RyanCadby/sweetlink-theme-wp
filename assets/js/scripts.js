@@ -139,7 +139,7 @@ jQuery(function ($) {
                 target_percentage_position = curr_scroll - $('.row-sweet').offset().top + window_height - 400;
                 console.log(bottom_of_target);
 
-                if( bottom_of_screen >= bottom_of_target && target_percentage_position <= sweet_top_arr[i] ){ // if we can see the div and if we have not scrolled past the item
+                if( bottom_of_screen >= bottom_of_target && target_percentage_position <= sweet_top_arr[i] && target_percentage_position > 0){ // if we can see the div and if we have not scrolled past the item
                     $(this).css('top', target_percentage_position + 'px');
                 } else if( target_percentage_position > sweet_top_arr[i]){ // if we've scrolled past - set position top
                     $(this).css('top', sweet_top_arr[i]);
