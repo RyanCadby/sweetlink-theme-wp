@@ -3869,6 +3869,9 @@ section.section-about-hero div.hero-right .child-hero-bg-pattern:nth-of-type(n+1
 .section-services .row-services .row-service-items .services-list{-webkit-column-count:2;-moz-column-count:2;column-count:2}
 section.section-child-hero .hero-right{left:60%}
 section.section-child-hero .hero-right .child-hero-bg-pattern:nth-of-type(n+10):nth-of-type(-n+17){display:none}
+.carousel-testimonials .carousel-inner{width:80%}
+.carousel-testimonials .carousel-control-prev{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.carousel-testimonials .carousel-control-next{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 html{font-size:14px}
 section{padding-top:6rem;padding-bottom:6rem}
 }@media(max-width:767.98px){.navbar-expand-md>.container,.navbar-expand-md>.container-fluid,.navbar-expand-md>.container-sm,.navbar-expand-md>.container-md,.navbar-expand-md>.container-lg,.navbar-expand-md>.container-xl{padding-right:0;padding-left:0}
@@ -3889,6 +3892,10 @@ section.section-about-hero div.hero-right .child-hero-bg-pattern:nth-of-type(n+1
 .section-services .row-services .service-image-cont img{width:100%;height:auto}
 section.section-child-hero div.hero-right{left:75%}
 section.section-child-hero div.hero-right .child-hero-bg-pattern:nth-of-type(n+10):nth-of-type(-n+17){display:none}
+.carousel-testimonials .carousel-inner{width:80%}
+.carousel-testimonials .carousel-inner .testimonial-description{font-size:1rem}
+.carousel-testimonials .carousel-control-prev{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.carousel-testimonials .carousel-control-next{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 section{padding-top:4rem;padding-bottom:4rem}
 }@media(max-width:575.98px){.navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid,.navbar-expand-sm>.container-sm,.navbar-expand-sm>.container-md,.navbar-expand-sm>.container-lg,.navbar-expand-sm>.container-xl{padding-right:0;padding-left:0}
 }@media only screen and (max-width:575.98px){.section-footer .col-nav{margin-top:2rem}

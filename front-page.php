@@ -35,6 +35,7 @@
 
 <?php get_template_part('template-parts/testimonials');?>
 
+<!-- Portfolio -->
 <section class="section-portfolio bg-primary">
     <div class="container">
         <div class="row row-portfolio-title">
@@ -54,7 +55,7 @@
                     
                     $card .= 
                     '<div class="col col-12 col-md-6">' .
-                    '<a class="portfolio-card">'. 
+                    '<a href="/work" class="portfolio-card">'. 
                     '<div class="portfolio-card-content">'.
                     $portfolio_image .
                     '<p class="portfolio-descriptoin">' . $portfolio_title . '</p>' . 
@@ -126,6 +127,7 @@
     </div>
 </section>
 
+<!-- Services -->
 <section class="section-services">
     <div class="container">
         <div class="row row-services">

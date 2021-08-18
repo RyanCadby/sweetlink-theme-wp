@@ -6,7 +6,7 @@ if ( get_field('enable_testimonials') ):
 
 
 <section class="section-testimonials">
-    <div class="container">
+    <div class="container-md">
         <div class="row">
             <div class="col col-12">
                 <div id="testimonialCarousel" class="carousel slide carousel-testimonials" data-interval="false">

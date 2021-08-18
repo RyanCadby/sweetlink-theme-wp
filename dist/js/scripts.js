@@ -126,7 +126,7 @@ jQuery(function ($) {
           bottom_of_target = target_position + target_height;
           bottom_of_screen = curr_scroll + window_height; // target_percentage_position = Math.floor(((bottom_of_screen - bottom_of_target)  / (window_height - (window_height * .6)) * 400));
 
-          target_percentage_position = curr_scroll - $('.row-sweet').offset().top + window_height - 400;
+          target_percentage_position = curr_scroll - $('.row-sweet').offset().top + window_height - window_height * .2;
           console.log(bottom_of_target);
 
           if (bottom_of_screen >= bottom_of_target && target_percentage_position <= sweet_top_arr[i] && target_percentage_position > 0) {

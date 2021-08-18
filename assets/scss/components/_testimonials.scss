@@ -71,3 +71,42 @@
         }
     }
 }
+
+///////////////////
+// tablet
+///////////////////
+@media only screen and (max-width: 991.98px){
+    .carousel-testimonials{
+        .carousel-inner{
+            width: 80%
+        }
+        .carousel-control-prev{
+            justify-content: flex-start;
+        }
+        .carousel-control-next{
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+///////////////////
+// tablet
+///////////////////
+@media only screen and (max-width: 767.98px){
+    .carousel-testimonials{
+        .carousel-inner{
+            width: 80%;
+
+            .testimonial-description{
+                font-size: 1rem;
+            }
+        }
+        .carousel-control-prev{
+            justify-content: flex-start;
+        }
+        .carousel-control-next{
+            justify-content: flex-end;
+        }
+    }
+}
