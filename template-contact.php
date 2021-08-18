@@ -13,7 +13,7 @@ get_header();
                     <?php the_field('hero_description'); ?>
                 </div>
 
-                <?php echo do_shortcode('[contact-form-7 id="241" title="Contact Page"]'); ?>
+                <?php echo do_shortcode(get_field('contact_form_shortcode')); ?>
             </div>
         </div>
     </div>
