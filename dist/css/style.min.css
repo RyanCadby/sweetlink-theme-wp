@@ -3904,7 +3904,7 @@ section{padding-top:4rem;padding-bottom:4rem}
 }@media only screen and (max-width:575.98px){.section-footer .col-nav{margin-top:2rem}
 .section-footer .col-social{margin-top:2rem}
 .section-footer .menu-footer-nav-container{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
-section#contact-modal-section .contact-modal-wrap{border-width:20px}
+section#contact-modal-section .contact-modal-wrap{border-width:20px;border-bottom-width:60px}
 section#contact-modal-section .contact-modal-wrap .col-email .contact-email{font-size:1.2rem}
 section.section-average .container{max-width:unset}
 section.section-average .container .average-text{font-size:5rem}
