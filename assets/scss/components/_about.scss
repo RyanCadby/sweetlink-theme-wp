@@ -54,21 +54,25 @@ section{
 // Tablet
 //////////////////////////
 @media only screen and (max-width: 991.98px){
-    section{
-        &.section-about-hero{
-            
-
-            div.hero-right{
-                left: 50%;
-
-                .child-hero-bg-pattern{
-                    &:nth-of-type(n+16):nth-of-type(-n+17){
-                        display: none;
+    .page-template-template-about{
+        section{
+            &.section-about-hero.section-child-hero{
+                
+    
+                div.hero-right{
+                    left: 50%;
+    
+                    .child-hero-bg-pattern{
+                        display: block;
+                        &:nth-of-type(n+16):nth-of-type(-n+17){
+                            display: none;
+                        }
                     }
                 }
             }
         }
     }
+
 }
 
 

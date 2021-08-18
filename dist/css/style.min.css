@@ -3864,8 +3864,9 @@ nav.navbar .navbar-link-container ul li a{display:block;font-size:2.2rem;font-fa
 }@media only screen and (max-width:991.98px){section#contact-modal-section .contact-modal-wrap{border-width:50px}
 section#contact-modal-section .contact-modal-wrap .col-email .contact-email{font-size:1.4rem}
 section.section-average .container{max-width:unset}
-section.section-about-hero div.hero-right{left:50%}
-section.section-about-hero div.hero-right .child-hero-bg-pattern:nth-of-type(n+16):nth-of-type(-n+17){display:none}
+.page-template-template-about section.section-about-hero.section-child-hero div.hero-right{left:50%}
+.page-template-template-about section.section-about-hero.section-child-hero div.hero-right .child-hero-bg-pattern{display:block}
+.page-template-template-about section.section-about-hero.section-child-hero div.hero-right .child-hero-bg-pattern:nth-of-type(n+16):nth-of-type(-n+17){display:none}
 .section-services .row-services .row-service-items .services-list{-webkit-column-count:2;-moz-column-count:2;column-count:2}
 section.section-child-hero .hero-right{left:60%}
 section.section-child-hero .hero-right .child-hero-bg-pattern:nth-of-type(n+10):nth-of-type(-n+17){display:none}

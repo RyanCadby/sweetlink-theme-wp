@@ -50,8 +50,8 @@ get_header();
 
 
 
-
-
+<?php get_template_part('template-parts/testimonials');?>
+<?php get_template_part('template-parts/cta');?>
 
 
 <?php get_footer();?>
