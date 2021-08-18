@@ -2747,6 +2747,7 @@ form.wpcf7-form input[type='text']:focus,form.wpcf7-form input[type='url']:focus
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close{background:0;border:0;position:absolute;top:0;right:0;font-size:1.6rem;line-height:.8;padding:1rem}
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close i{line-height:.8}
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close:hover{color:#ffd600}
+#contact-modal-section .contact-modal-wrap .container .row-contact form input{-webkit-box-shadow:none;box-shadow:none}
 #contact-modal-section .contact-modal-wrap .container .row-social .col{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #contact-modal-section .contact-modal-wrap .container .row-social .col .social-cont{display:-webkit-box;display:-ms-flexbox;display:flex}
 #contact-modal-section .contact-modal-wrap .container .row-social .col .social-cont a{line-height:1;display:block;padding:.5rem}
