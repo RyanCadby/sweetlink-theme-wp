@@ -18,7 +18,7 @@
                 $cta_page_id = $post->ID;
                 $enable_cta = get_field('enable_cta', $cta_page_id);
                 if( $enable_cta ):
-                    if( have_rows('cta_details') ):
+                    if( have_rows('cta_details', $cta_page_id) ):
                         $cta_echo = '';
                         while( have_rows('cta_details') ): the_row();
                             $cta_title = get_sub_field('title');

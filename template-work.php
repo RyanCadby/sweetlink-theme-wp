@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Portfolio */ 
+/* Template Name: Work */ 
 
 get_header();
 ?>
@@ -41,6 +41,7 @@ get_header();
                     '</div>';
                 endforeach;
                 echo $portfolio_print;
+                wp_reset_postdata();
                 ?>
         </div>
     </div>
