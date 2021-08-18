@@ -2734,6 +2734,7 @@ nav.navbar .navbar-link-container .nav-link:hover:after{left:0;right:auto;width:
 form.wpcf7-form label{width:100%;position:relative}
 form.wpcf7-form label span{width:100%}
 form.wpcf7-form label.input-wrap:after{content:"";display:block;height:2px;background:black;width:calc(100% - 4px);position:absolute;bottom:0;left:2px;z-index:0}
+form.wpcf7-form input{border-style:solid;border:0;-webkit-box-shadow:none;box-shadow:none}
 form.wpcf7-form input[type='text'],form.wpcf7-form input[type='url'],form.wpcf7-form input[type='email'],form.wpcf7-form textarea{border:2px solid #fff;padding:.25rem 0 .25rem .75rem;position:relative;width:100%}
 form.wpcf7-form input[type='text']::-webkit-input-placeholder,form.wpcf7-form input[type='url']::-webkit-input-placeholder,form.wpcf7-form input[type='email']::-webkit-input-placeholder,form.wpcf7-form textarea::-webkit-input-placeholder{color:#6d7783}
 form.wpcf7-form input[type='text']::-moz-placeholder,form.wpcf7-form input[type='url']::-moz-placeholder,form.wpcf7-form input[type='email']::-moz-placeholder,form.wpcf7-form textarea::-moz-placeholder{color:#6d7783}
@@ -2747,7 +2748,6 @@ form.wpcf7-form input[type='text']:focus,form.wpcf7-form input[type='url']:focus
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close{background:0;border:0;position:absolute;top:0;right:0;font-size:1.6rem;line-height:.8;padding:1rem}
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close i{line-height:.8}
 #contact-modal-section .contact-modal-wrap .container #contact-modal-close:hover{color:#ffd600}
-#contact-modal-section .contact-modal-wrap .container .row-contact form input{-webkit-box-shadow:none;box-shadow:none}
 #contact-modal-section .contact-modal-wrap .container .row-social .col{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #contact-modal-section .contact-modal-wrap .container .row-social .col .social-cont{display:-webkit-box;display:-ms-flexbox;display:flex}
 #contact-modal-section .contact-modal-wrap .container .row-social .col .social-cont a{line-height:1;display:block;padding:.5rem}

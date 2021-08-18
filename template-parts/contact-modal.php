@@ -17,7 +17,7 @@ global $sl_admin_active;
             <button id="contact-modal-close">
                 <i class="fas fa-times"></i>
             </button>
-            <div class="row row-contact pt-6 pb-2">
+            <div class="row row-contact pt-3 pt-sm-6 pb-2">
                 <div class="col col-12 col-md-6 col-email order-2 order-md-1">
                     <p>Don't like forms?</p>
                     <a href="mailto:ryan@sweetlinkstudio.com" class="contact-email h3">Ryan@SweetLinkStudio.com</a>
