@@ -20,7 +20,7 @@
             }
             // Services
             .services-list{
-                column-count: 3;
+                column-count: 2;
                 margin-bottom: 2rem;
 
                 li{
@@ -88,9 +88,12 @@
 @media only screen and (max-width: 991.98px){
     .section-services{
         .row-services{
-            // Services
-            .services-list{
-                column-count: 2;
+            .row-service-items{
+                // Services
+                .services-list{
+                    column-count: 2;
+
+                }
             }
         }
     }

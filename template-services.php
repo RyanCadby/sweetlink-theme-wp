@@ -48,7 +48,7 @@ $posts = get_posts($args);
                             $services .= '<div class="row row-services-featured">';
                             while( have_rows('featured_tags', $id) ): the_row();
                                 $services .= 
-                                '<div class="col col-12 col-md-6">'. 
+                                '<div class="col col-12">'. 
                                     '<p class="p-bg">' . get_sub_field('title') . '</p>' . 
                                     '<p>' . get_sub_field('description') . '</p>' .
                                 '</div>';
