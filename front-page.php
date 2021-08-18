@@ -33,6 +33,8 @@
     </div>
 </section>
 
+<?php get_template_part('template-parts/testimonials');?>
+
 <section class="section-portfolio bg-primary">
     <div class="container">
         <div class="row row-portfolio-title">
@@ -103,7 +105,7 @@
                 <h2 class=""><span>DON'T DO</span> <span>"mediocre"</span> <span>Let's Make Something</span></h2>
             </div>
         </div>
-        <div class="placeholder" style="height: 200vh"></div>
+        <!-- <div class="placeholder" style="height: 200vh"></div> -->
         <!-- <div class="row py-5">
             <div class="col col-12">
                 <h1 class="text-center h1-d1">We work hard to deliver products that make you want to say</h1>
@@ -111,27 +113,6 @@
         </div> -->
         <div class="row row-sweet">
             <div class="col col-12">
-                <!-- <div class="sweet-cont">
-                    <p class="p-sweet">Sweet</p>
-                </div>
-                <div class="sweet-cont">
-                    <p class="p-sweet sweet-slide">Sweet!</p>
-                </div>
-                <div class="sweet-cont">
-                    <p class="p-sweet sweet-slide">Sweet!</p>
-                </div>
-                <div class="sweet-cont">
-                    <p class="p-sweet sweet-slide">Sweet!</p>
-                </div>
-                <div class="sweet-cont">
-                    <p class="p-sweet sweet-slide">Sweet!</p>
-                </div>
-                <div class="sweet-cont">
-                    <p class="p-sweet sweet-slide">Sweet!</p>
-                </div>
-                <div class="sweet-cont">
-                    <p class="p-sweet sweet-slide">Sweet!</p>
-                </div> -->
                 <p class="p-sweet sweet-slide">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
                 <p class="p-sweet sweet-slide">Sweet!</p>
@@ -155,10 +136,10 @@
             </div> 
         </div>
         <div class="row">
-            <div class="col col-12 col-md-5 pb-2 pb-md-0">
+            <div class="col col-12 col-md-5 col-lg-6 pb-2 pb-md-0">
                 <?php the_field('services_copy');?>
             </div>
-            <div class="col col-12 col-sm-6 col-md-3 pb-2 pb-md-0">
+            <div class="col col-12 col-sm-6 col-md-3 col-lg-3 pb-2 pb-md-0">
                 <?php echo
                 '<h3>' . get_field('design_title') . '</h3>';
                 if( have_rows('design_items') ):
@@ -171,7 +152,7 @@
                 endif;
                 ?>
             </div>
-            <div class="col col-12 col-sm-6 col-md-4">
+            <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
                 <?php echo 
                 '<h3>' . get_field('development_title') . '</h3>';
                 if( have_rows('development_items') ):

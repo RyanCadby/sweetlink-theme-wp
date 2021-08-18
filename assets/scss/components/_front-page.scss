@@ -168,14 +168,15 @@ section{
             }
         }
         .row-dont-do{
-            position: fixed;
+            // position: fixed;
             top: 0;
             left: 0;
-            opacity: 0;
+            // opacity: 0;
             height: 100vh;
-            width: 100vw;
+            // width: 100vw;
             background: $white;
             transition: .3s ease-in-out;
+            // display: none;
 
             .col{
                 display: flex;
@@ -212,7 +213,7 @@ section{
             }
         }
         .row-sweet{
-            height: 55rem;
+            height: 50rem;
             .p-sweet{
                 font-family: $p-family;
                 font-weight: $p-black;

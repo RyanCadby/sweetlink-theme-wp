@@ -74,7 +74,12 @@ jQuery(function ($) {
         sweet.each(function(){
             $('.p-sweet:nth-of-type(' + sweet_counter + ')').css('font-size', sweet_font_size + sweet_font_size_suff);
             // set position
-            sweet_top = $(this).position().top + 50 + sweet_top;
+            if( sweet_counter == 1){
+                sweet_top = 0;
+            } else{
+                sweet_top = $(this).position().top + 50 + sweet_top;
+            }
+            
             sweet_top_arr.push(sweet_top);
             // set font size
             sweet_font_size_round = Math.round((sweet_font_size - .2) * 10) / 10;
@@ -113,20 +118,21 @@ jQuery(function ($) {
             });
 
             // fade in don't do
-            var dont_do_end = 800;
-            if( curr_scroll > dont_do_start  && curr_scroll < (dont_do_start + dont_do_end) ){
-                $('.row-dont-do').fadeIn(500, function(){
-                    $('.row-dont-do').css('opacity', '1');
-                });
-            } else if(curr_scroll > (dont_do_start + dont_do_end) ){
-                $('.row-dont-do').fadeOut(500, function(){
-                    $('.row-dont-do').css('opacity', '0');
-                }); 
-            } else{
-                $('.row-dont-do').fadeOut(500, function(){
-                    $('.row-dont-do').css('opacity', '0');
-                });
-            }
+            // var dont_do_end = 800;
+            // if( curr_scroll > dont_do_start  && curr_scroll < (dont_do_start + dont_do_end) ){
+            //     $('.row-dont-do').css('display', 'block');
+            //     $('.row-dont-do').fadeIn(500, function(){
+            //         $('.row-dont-do').css('opacity', '1');
+            //     });
+            // } else if(curr_scroll > (dont_do_start + dont_do_end) ){
+            //     $('.row-dont-do').fadeOut(500, function(){
+            //         $('.row-dont-do').css('opacity', '0');
+            //     }); 
+            // } else{
+            //     $('.row-dont-do').fadeOut(500, function(){
+            //         $('.row-dont-do').css('opacity', '0');
+            //     });
+            // }
             
 
             // sweet animation down screen
@@ -235,8 +241,23 @@ jQuery(function ($) {
         }
     }
     
-    
 
+
+    /////////////////////////////////
+    // carousel functions
+    /////////////////////////////////
+    var item_height = 0;
+    var carousel_height = 0;
+    $('.carousel-item').each(function(){
+        console.log($(this).outerHeight())
+        carousel_height = item_height > $(this).outerHeight() ? item_height : $(this).outerHeight();
+        item_height = $(this).outerHeight();
+    })
+    
+    console.log(carousel_height)
+    $('.carousel-inner').each(function(){
+        $(this).css('height', carousel_height)
+    })
 
 
     }); // end window ready
