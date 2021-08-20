@@ -25,6 +25,7 @@ jQuery(function ($) {
     $('#menu-primary-nav').append(menuContactLink);
 
     // contact link click
+    $('#contact-modal-section').css('display', 'flex').hide();
     $('#contact-modal-show, .contact-modal-show').on('click', function(e){
         e.preventDefault();
         $('#contact-modal-section').fadeIn(300);
@@ -265,7 +266,7 @@ jQuery(function ($) {
 
 
     $(document).on('click', function(e){
-        console.log(e.target);
+        // console.log(e.target);
     });
     // open mobile menu
     $('#navbar-mobile').on("click", function() {

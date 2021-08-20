@@ -8,7 +8,8 @@
     <meta name="description" content="<?php bloginfo('description'); ?>" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <?php if( strpos($_SERVER, 'localhost') == false ){
+    <?php 
+    if( strpos($_SERVER['HTTP_HOST'], 'localhost') == false ){
         echo '<!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-21K0C5CSY4"></script>
         <script>
@@ -18,7 +19,8 @@
         
           gtag(\'config\', \'G-21K0C5CSY4\');
         </script>';
-    } ?>
+    } 
+    ?>
     <?php wp_head() ;?>
 </head>
 

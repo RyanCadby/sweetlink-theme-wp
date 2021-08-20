@@ -22,6 +22,7 @@ jQuery(function ($) {
     var menuContactLink = '<li id="menu-item-contact" class="menu-item nav-item"><a id="contact-modal-show" href="#sl-contact"" class="nav-link">Contact</a></li>';
     $('#menu-primary-nav').append(menuContactLink); // contact link click
 
+    $('#contact-modal-section').css('display', 'flex').hide();
     $('#contact-modal-show, .contact-modal-show').on('click', function (e) {
       e.preventDefault();
       $('#contact-modal-section').fadeIn(300);
@@ -238,8 +239,7 @@ jQuery(function ($) {
     });
   }); // end window ready
 
-  $(document).on('click', function (e) {
-    console.log(e.target);
+  $(document).on('click', function (e) {// console.log(e.target);
   }); // open mobile menu
 
   $('#navbar-mobile').on("click", function () {
