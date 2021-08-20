@@ -1,0 +1,13 @@
+BEGIN:VCARD 
+VERSION:2.1 
+N:Cadby;Ryan
+FN:Ryan Cadby
+ORG:Sweet Link Studio
+TITLE:Web Developer
+TEL;WORK;VOICE:(602)799-7292
+TEL;CELL;VOICE:(602)799-7292
+ADR;WORK:;Sweet Link Studio;7350 W Alameda #1010;Lakewood;CO;80226;USA 
+URL;WORK:http://sweetlinkstudio.com 
+EMAIL;INTERNET:ryan@sweetlinkstudio.com 
+END:VCARD
+
