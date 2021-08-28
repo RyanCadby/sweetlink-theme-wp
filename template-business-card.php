@@ -28,12 +28,12 @@ get_header();
                 </a>
             </div>
             <div class="col col-10 offset-1 col-btns">
-                <a class="btn btn-secondary btn-bc-contact" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/ryan-cadby.vcf">
+                <a class="btn btn-secondary btn-bc-contact" href="tel:+16027997292">
                     <i class="fas fa-phone"></i> <span>Talk With A Web Designer</span>
                 </a>
             </div>
             <div class="col col-10 offset-1 col-btns">
-                <a class="btn btn-secondary btn-bc-contact" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/ryan-cadby.vcf">
+                <a class="btn btn-secondary btn-bc-contact" href="mailto:ryan@sweetlinkstudio.com">
                     <i class="fas fa-envelope"></i> <span>Email Us</span>
                 </a>
             </div>
