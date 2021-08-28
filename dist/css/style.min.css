@@ -2855,7 +2855,7 @@ section.section-business-card .row-title{margin-bottom:4rem}
 section.section-business-card .col-btns{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 section.section-business-card .col-btns .btn-bc-contact{margin-bottom:2rem;position:relative}
 section.section-business-card .col-btns .btn-bc-contact i{position:absolute;left:0;height:100%;background:white;top:0;width:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-radius:4px 0 0 4px;font-size:1rem}
-section.section-business-card .col-btns .btn-bc-contact span{padding-left:10px}
+section.section-business-card .col-btns .btn-bc-contact span{padding-left:15px}
 html{font-size:15px;scroll-behavior:smooth;overflow-x:hidden}
 body{overflow-x:hidden}
 h1,.h1{font-family:"Rajdhani",sans-serif;font-size:2.6rem;font-weight:800}

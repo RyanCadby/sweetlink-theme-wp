@@ -16,15 +16,23 @@ get_header();
                 <a class="btn btn-secondary btn-bc-contact" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/ryan-cadby.vcf">
                     <i class="fas fa-address-book"></i> <span>Download My Contact Info</span>
                 </a>
+            </div>
+            <div class="col col-10 offset-1 col-btns">
                 <a class="btn btn-secondary btn-bc-contact" href="<?php echo $GLOBALS['local_env']; ?>/denver-web-design-company/">
                     <i class="fas fa-eye"></i> <span>View Web Design Portfolio</span>
                 </a>
+            </div>
+            <div class="col col-10 offset-1 col-btns">
                 <a class="btn btn-secondary btn-bc-contact" href="<?php echo $GLOBALS['local_env']; ?>/talk-to-a-web-designer/">
                     <i class="fas fa-question"></i> <span>Request A Free Website Consultation</span>
                 </a>
+            </div>
+            <div class="col col-10 offset-1 col-btns">
                 <a class="btn btn-secondary btn-bc-contact" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/ryan-cadby.vcf">
                     <i class="fas fa-phone"></i> <span>Talk With A Web Designer</span>
                 </a>
+            </div>
+            <div class="col col-10 offset-1 col-btns">
                 <a class="btn btn-secondary btn-bc-contact" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/ryan-cadby.vcf">
                     <i class="fas fa-envelope"></i> <span>Email Us</span>
                 </a>
