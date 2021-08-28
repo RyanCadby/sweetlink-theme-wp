@@ -1,12 +1,10 @@
     
 <?php 
-if( !is_page('contact') ){
-    get_template_part('template-parts/contact', 'modal', array());
-}
+get_template_part('template-parts/contact', 'modal', array());
 ?>
 
 
-
+<?php if( !is_page('bc-contact') ): ?>
 <section class="section-footer">
     <div class="container">
         <div class="row mb-2">
@@ -72,7 +70,7 @@ if( !is_page('contact') ){
 
 
    
-
+<?php endif; ?>
 <?php wp_footer(); ?>
 
 

@@ -1,0 +1,37 @@
+section{
+    &.section-business-card{
+        height: 100vh;
+
+        .row-title{
+            margin-bottom: 4rem;
+        }
+        .col-btns{
+            display: flex;
+            flex-wrap: wrap;
+            // align-items: center;
+            // justify-content: center;
+
+            .btn-bc-contact{
+                margin-bottom: 2rem;
+                position: relative;
+
+                i{
+                    position: absolute;
+                    left: 0;
+                    height: 100%;
+                    background: white;
+                    top: 0;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px 0 0 4px;
+                    font-size: 1rem;
+                }
+                span{
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
