@@ -23,7 +23,7 @@ add_action('wp_enqueue_scripts', 'sl_load_scripts');
 
 // global vars
 global $local_env;
-$local_env = 'http://localhost/sweetlink/';
+$local_env = 'http://localhost/sweetlink';
 if( strpos($_SERVER['HTTP_HOST'], 'localhost') === false ){
      $GLOBALS['local_env'] = '';
 }
