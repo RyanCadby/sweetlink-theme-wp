@@ -8,7 +8,7 @@ if (currHost.includes('local')) {
 
 currHost += '/wp-content/themes/sweetlink/assets/lottie/';
 var params = {
-  container: document.getElementById('lottie-3'),
+  container: document.getElementById('lottie-2'),
   path: currHost + 'deployment/data-phone-1.json',
   renderer: 'svg',
   loop: true,

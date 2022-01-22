@@ -8,7 +8,7 @@ if (currHost.includes('local')) {
 
 currHost += '/wp-content/themes/sweetlink/assets/lottie/';
 var params = {
-  container: document.getElementById('lottie-2'),
+  container: document.getElementById('lottie-3'),
   path: currHost + 'qa/hand-stamp.json',
   renderer: 'svg',
   loop: true,
