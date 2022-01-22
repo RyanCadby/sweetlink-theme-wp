@@ -16,6 +16,7 @@
 		"gulp-babel": "^8.0.0",
 		"gulp-cache": "^1.0.2",
 		"gulp-concat": "^2.5.2",
+		"gulp-dart-sass": "^1.0.2",
 		"gulp-filter": "^6.0.0",
 		"gulp-imagemin": "^7.1.0",
 		"gulp-line-ending-corrector": "^1.0.1",
@@ -25,7 +26,7 @@
 		"gulp-remember": "^1.0.1",
 		"gulp-rename": "^2.0.0",
 		"gulp-rtlcss": "^1.2.0",
-		"gulp-sass": "^4.0.1",
+		"gulp-sass": "^4.1.1",
 		"gulp-sort": "^2.0.0",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-uglify": "^3.0.0",
@@ -33,7 +34,8 @@
 		"gulp-wp-pot": "^2.0.7",
 		"gulp-zip": "^5.0.2",
 		"install": "^0.13.0",
-		"npm": "^7.18.1"
+		"npm": "^7.18.1",
+		"sass": "^1.32.13"
 	},
 	"scripts": {
 		"start": "gulp",
@@ -47,6 +49,8 @@
 		"cache-clear": "gulp clearCache"
 	},
 	"dependencies": {
-		"bootstrap": "^4.6.0"
+		"babel-register": "^6.26.0",
+		"bootstrap": "^4.6.0",
+		"gulp-cli": "^2.3.0"
 	}
 }

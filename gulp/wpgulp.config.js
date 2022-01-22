@@ -27,9 +27,10 @@ const styleSRC = '../assets/scss/*.scss';
 const styleDestination = '../dist/css/';
 
 // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
-const outputStyle = 'compact';
+const outputStyle = 'compressed';
 const errLogToConsole = true;
 const precision = 10;
+const quietDeps = true;
 
 // JS Vendor options.
 
@@ -143,6 +144,7 @@ module.exports = {
 	styleSRC,
 	styleDestination,
 	outputStyle,
+	quietDeps,
 	errLogToConsole,
 	precision,
 	jsVendorSRC,

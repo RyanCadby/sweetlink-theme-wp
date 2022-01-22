@@ -19,6 +19,27 @@ $posts = get_posts($args);
 
 ?>
 
+<style>
+        body{
+            background-color:#ffffff;
+            margin: 0px;
+            height: 100%;
+            overflow: hidden;
+        }
+        .lottie{
+            background-color:#ffffff;
+            width:100%;
+            height:100%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+        }
+
+</style>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"> -->
+
 <section class="section-services">
     <div class="container">
 
@@ -26,6 +47,7 @@ $posts = get_posts($args);
                 if($posts):
                     $services = '';
                     $service_count = 1;
+                    $i = 0;
                     foreach ( $posts as $post ):
                         setup_postdata($post);
                         $id = get_the_ID();
@@ -72,14 +94,15 @@ $posts = get_posts($args);
                         $services .= '</div>'; // end left col
 
                         $services .= '<div class="col col-12 col-md-4 order-1 order-md-2"><div class="service-image-cont">'. 
-                        get_the_post_thumbnail($id, 'full') . 
+                        // get_the_post_thumbnail($id, 'full') . 
+                        '<div class="lottie" id="lottie-'.$i.'"></div>' . 
                         '</div>' . // end col
                         '</div>' . // end col
                         '</div>'; // end row
 
                         // $services .= '<div class="service-img-repeat-cont" id="service-img-' . $service_count . '">' . get_the_post_thumbnail($id, 'full') . '</div>';
                         ++$service_count;
-
+                        ++$i;
 
                     endforeach;
                     wp_reset_postdata();
