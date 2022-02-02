@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', 'sl_load_stylesheets');
 function sl_load_scripts()
 {   
     wp_enqueue_script('scripts-js', get_template_directory_uri() . '/dist/js/scripts.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), '1.0.0', false);
+    // wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), '1.0.0', false);
     // wp_enqueue_script('popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), '1.0.0', false);
 
     if( is_page_template('template-services.php') ){
@@ -28,6 +28,13 @@ function sl_load_scripts()
     
 }
 add_action('wp_enqueue_scripts', 'sl_load_scripts');
+
+function sl_dequeue_scripts(){
+    wp_dequeue_style('wp-block-library');
+    wp_deregister_style('wp-block-library');
+}
+add_action( 'wp_print_scripts', 'sl_dequeue_scripts', 100 );
+add_action( 'wp_enqueue_scripts', 'sl_dequeue_scripts', 100 );
 
 // global vars
 global $local_env;

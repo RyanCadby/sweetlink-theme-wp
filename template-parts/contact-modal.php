@@ -34,8 +34,9 @@ global $sl_admin_active;
                         if( have_rows('contact_information', 'option') ):
                             while( have_rows('contact_information', 'option') ): the_row();
                                 if( have_rows('social_media') ):
+                                    $social_print = '';
                                     while( have_rows('social_media') ): the_row();
-                                        $social_print = '<a href="' . get_sub_field('url') . '" class="social-link" target="_blank"><i class="fab ' . get_sub_field('platform') . '"></i></a>';
+                                        $social_print .= '<a href="' . get_sub_field('url') . '" class="social-link" target="_blank"><i class="fab ' . get_sub_field('platform') . '"></i></a>';
                                     endwhile;
                                     echo $social_print;
                                 endif;
