@@ -4,8 +4,6 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php the_title(); ?></title>
-    <meta name="description" content="<?php bloginfo('description'); ?>" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
     <?php 
@@ -31,7 +29,7 @@
     <header class="sticky-top bg-primary">
         <div class="container nav-cont bg-primary">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar navbar-brand" href="<?= get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/dist/images/sl-logo-text-h-white.svg'; ?>" alt="Sweet Link Studio Logo"></a>
+                <a class="navbar navbar-brand" href="<?= get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/dist/images/sl-logo-text-h-white.svg'; ?>" alt="Sweet Link Studio"></a>
                 <button id="navbar-mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                     <i class="fas fa-times d-none"></i>
